@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70d029c0-897d-49b1-b54b-a508add97728" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/src/_pages.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentytwenty/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_reboot.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/src/_reboot.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/src/_reboot.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/src/bootstrap.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/src/bootstrap.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentytwenty/theme.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +44,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609083256380</updated>
-      <workItem from="1609083257622" duration="9141000" />
+      <workItem from="1609083257622" duration="9380000" />
     </task>
     <servers />
   </component>
