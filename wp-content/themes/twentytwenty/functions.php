@@ -765,6 +765,6 @@ add_action( 'wp_enqueue_scripts', 'child_enqueue_styles');
 
 function child_enqueue_styles() {
 
-    wp_enqueue_style( 'reset-style', get_template_directory_uri() . '/less/css/styles.css', array());
+    wp_enqueue_style( 'reset-style', get_template_directory_uri() . '/theme.css', array());
 }
 

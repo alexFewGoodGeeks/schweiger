@@ -1,0 +1,9 @@
+h2 {
+  background-color: red;
+}
+h2:hover {
+  text-transform: lowercase;
+}
+a {
+  color: orange;
+}

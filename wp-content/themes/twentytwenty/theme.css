@@ -13,6 +13,16 @@ body {
   background-color: transparent;
   overflow: hidden;
 }
+h2 {
+  color: blue;
+  background-color: red;
+}
+h2:hover {
+  text-transform: lowercase;
+}
+a {
+  color: orange;
+}
 code {
   background-color: none;
   position: absolute;
@@ -37,6 +47,7 @@ button :active {
 }
 .alert {
   background-color: blue;
+  float: right;
 }
 .alert:hover {
   display: none;
