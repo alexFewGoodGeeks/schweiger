@@ -1,0 +1,17 @@
+button {
+  background-color: red;
+  color: #428bca;
+}
+button:hover {
+  font-size: 12px;
+}
+button:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+button :active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
