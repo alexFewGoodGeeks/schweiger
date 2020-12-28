@@ -15,7 +15,8 @@ gulp.task('less', function() {
 });
 
 gulp.task('pack-css', function () {
-    return gulp.src(['./css/bootstrap.css', './css/bootstrap-grid.css', './css/bootstrap-reboot.css'])
+    //return gulp.src(['./css/bootstrap.css', './css/bootstrap-grid.css', './css/bootstrap-reboot.css'])
+    gulp.src(['./css/styles.css'])
         .pipe(concat('styles.css'))
         .pipe(rename('theme.css'))
         .pipe(gulp.dest('../'));
