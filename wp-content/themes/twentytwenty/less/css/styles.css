@@ -13,34 +13,13 @@ body {
   background-color: transparent;
   overflow: hidden;
 }
-h2 {
-  background-color: red;
-}
-h2:hover {
-  text-transform: lowercase;
-}
 a {
-  color: blue;
+  background-color: red;
 }
 code {
   background-color: none;
   position: absolute;
   top: 10px;
-}
-button {
-  background-color: yellow;
-  color: #428bca;
-  font-size: 12px;
-  line-height: 2;
-}
-button .btn {
-  font-size: 12px;
-}
-.primary-menu-wrapper {
-  background-color: black;
-}
-.primary-menu-wrapper a:hover {
-  text-decoration: none;
 }
 .alert {
   background-color: blue;
