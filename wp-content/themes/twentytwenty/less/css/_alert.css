@@ -1,7 +1,0 @@
-.alert {
-  background-color: blue;
-  float: right;
-}
-.alert:hover {
-  display: none;
-}

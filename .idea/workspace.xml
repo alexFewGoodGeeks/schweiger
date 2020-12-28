@@ -2,11 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70d029c0-897d-49b1-b54b-a508add97728" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/src/_pages.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/src/bootstrap.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/src/bootstrap.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentytwenty/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_alert.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_badge.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_breadcrumb.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_button-group.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_buttons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_card.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_close.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_code.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_custom-forms.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_dropdown.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_forms.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_images.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_input-group.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_jumbotron.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_list-group.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_mixins.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_modal.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_nav.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_navbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_pages.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_pagination.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_popover.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_print.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_progress.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_root.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_spinners.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_tables.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_toasts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_tooltip.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_transitions.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_type.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_utilities.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/_variables.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/src/_buttons.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/src/_buttons.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/src/_nav.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/src/_nav.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/src/_reboot.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/twentytwenty/less/src/_reboot.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/twentytwenty/theme.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +85,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609083256380</updated>
-      <workItem from="1609083257622" duration="9380000" />
+      <workItem from="1609083257622" duration="13819000" />
     </task>
     <servers />
   </component>
