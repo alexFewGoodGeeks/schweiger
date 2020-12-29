@@ -196,7 +196,6 @@ if ( $nd_options_meta_box_post_header_img != '' ) { ?>
                 <!--post-->
                 <div style="float:left; width:100%;" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                     <!--automatic title-->
-                    <?php if ( get_post_meta( get_the_ID(), 'nd_options_meta_box_post_title', true ) != 1 ) { echo '<h1 class=""><strong>'.get_the_title().'</strong></h1><div class="nd_options_section nd_options_height_20"></div>'; } ?>
                     <!--start content-->
                     <?php the_content(); ?>
                     <!--end content-->

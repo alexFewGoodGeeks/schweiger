@@ -13,3 +13,98 @@ body {
   background-color: transparent;
   overflow: hidden;
 }
+body {
+  overflow: auto;
+}
+.wpb_content_element {
+  margin-bottom: 0px !important;
+}
+#welcome-text .welcome-title {
+  font-weight: 500;
+  font-family: 'Roboto Slab', serif;
+  font-style: normal;
+  color: #DC052C;
+  font-size: 50px;
+  line-height: 40px;
+}
+#welcome-text .welcome-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 32px;
+  line-height: 55px;
+}
+#welcome-text .welcome-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  color: #000;
+  line-height: 28px;
+}
+#welcome-gallery .wpb_wrapper {
+  display: grid;
+  grid-template-columns: 150px 100px;
+  grid-row: auto auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+#welcome-gallery .wpb_wrapper .wpb_single_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#welcome-gallery .wpb_wrapper .wpb_content_element {
+  margin-bottom: 0px;
+}
+#welcome-quote-container {
+  background-color: #E5E5E5;
+}
+#welcome-quote-container #homepage-quote p {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000;
+  text-align: center;
+}
+#welcome-quote-container #homepage-quote .small-text {
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+}
+#homepage-text-image .homepage-text-image-col > div .vc_column-inner {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#homepage-text-image .homepage-text-image-col h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #000;
+  text-align: center;
+  margin: 50px;
+  text-transform: uppercase;
+}
+#homepage-text-image .homepage-text-image-col p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+  margin: 40px;
+}
+#homepage-text-image .homepage-text-image-col a {
+  background-color: #DC052C;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+}

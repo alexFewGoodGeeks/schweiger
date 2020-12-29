@@ -24,9 +24,10 @@ if ( $nd_options_customizer_header_5_content_mobile == '' ) { $nd_options_custom
 
             $nd_options_post_h   = get_post($nd_options_customizer_header_5_content);
             $nd_options_post_output_h =  apply_filters( 'the_content', $nd_options_post_h->post_content );
-            
+
             //echo all footer page
             echo $nd_options_post_output_h;
+
 
             $nd_options_strings_h  = $nd_options_post_h->post_content;
             $nd_options_pieces_h = explode('css=".vc_custom_', $nd_options_strings_h);
