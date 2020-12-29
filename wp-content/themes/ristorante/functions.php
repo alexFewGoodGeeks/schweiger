@@ -357,3 +357,11 @@ function nicdark_welcome_page_content(){
 
 }
 //END create welcome page on activation
+
+add_action( 'wp_enqueue_scripts', 'child_enqueue_styles');
+
+function child_enqueue_styles() {
+
+    wp_enqueue_style( 'reset-style', get_template_directory_uri() . '/theme.css', array());
+}
+
