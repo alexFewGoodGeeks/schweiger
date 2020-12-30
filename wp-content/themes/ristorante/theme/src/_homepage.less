@@ -4,7 +4,7 @@
 
 }
 #welcome-text {
-
+  //margin-top: @sectionMarginTop;
   .welcome-title {
     font-weight: 500;
     font-family: @font-family-roboto-slab;
@@ -37,20 +37,38 @@
 #welcome-gallery {
   .wpb_wrapper {
   //  margin: 20px auto;
-
+    margin-left: 25px;
     display:grid;
     grid-template-columns: 150px 100px;
     grid-row: auto auto;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
+    position: relative;
 
     .wpb_single_image {
+      position: absolute;
+      &:nth-child(1) {
+        left: 0;
+      }
+      &:nth-child(2) {
+        right: 0;
+        top: 20px;
+      }
+      &:nth-child(3) {
+        left: 0;
+        top: 120px;
+      }
+      &:nth-child(4) {
+        right: 0;
+        top: 187px;
+      }
 
       display:flex;
       align-items:center;
       justify-content:center;
 
     }
+
     .wpb_content_element {
 
         margin-bottom: 0px;
@@ -59,10 +77,11 @@
   }
 }
 
-#welcome-quote-container {
+.welcome-quote-container {
   background-color: #E5E5E5;
-  #homepage-quote {
-
+  margin-top: @sectionMarginTop;
+  .homepage-quote {
+    padding: 100px;
     p {
       font-family: @font-family-roboto-montserrat;
       font-style: normal;
@@ -86,6 +105,9 @@
 
 #homepage-text-image {
   .homepage-text-image-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     >div {
       .vc_column-inner {
         padding-left: 0px;
@@ -98,15 +120,16 @@
       font-size: 32px;
       color: #000;
       text-align: center;
-      margin:50px;
+
       text-transform: uppercase;
     }
     p {
       font-family: @font-family-roboto-montserrat;
-      font-weight: normal;
       font-size: 16px;
       text-align: center;
-      margin:40px;
+      margin:40px 40px;
+      font-weight: 400;
+      color: #000;
     }
     a {
       background-color: #DC052C;
@@ -118,10 +141,152 @@
       text-transform: uppercase;
       color: #fff;
     }
+    &:last-child {
+      box-shadow: 0 15px 27px -25px grey;
+    }
   }
     .vc_column-inner {
       //padding:0px;
       //padding-right: 0px;
     }
 
+}
+
+.homepage-auswahl {
+  margin-top: @sectionMarginTop;
+  .homepage-auswahl-text {
+    text-align: center;
+    .title {
+      font-weight: 500;
+      font-family: @font-family-roboto-slab;
+      font-style: normal;
+      color: #DC052C;
+      font-size: 50px;
+      line-height: 40px;
+    }
+    .subtitle {
+      font-family: @font-family-roboto-montserrat;
+      font-style: normal;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 32px;
+      line-height: 55px;
+    }
+    .text {
+      font-family: @font-family-roboto-montserrat;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 16px;
+      color: #000;
+      line-height: 28px;
+    }
+  }
+  .homepage-auswahl-images {
+    margin-top: 50px;
+    .wpb_wrapper {
+      display: inline-flex;
+      gap: 12px;
+    }
+  }
+  .homepage-auswahl-buttons {
+    margin: 50px 100px 100px;
+    text-align: center;
+    p {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+}
+
+.homepage-zertifiziert {
+  text-align: center;
+  background-image: url('/wp-content/uploads/images/homepage_zertifiziert.png');
+  background-size: cover;
+  padding: 18%;
+  .title {
+    font-weight: 500;
+    font-family: @font-family-roboto-slab;
+    font-style: normal;
+    color: #fff;
+    font-size: 50px;
+    line-height: 40px;
+  }
+
+  .subtitle {
+    font-family: @font-family-roboto-montserrat;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 55px;
+    color: #fff;
+
+  }
+
+  .text {
+    font-family: @font-family-roboto-montserrat;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    color: #fff;
+    line-height: 28px;
+    margin: 10px 30px 30px;
+  }
+}
+
+.homepage-fuhrung {
+  padding : 10%;
+  .homepage-fuhrung-text {
+    >div {
+      padding-top: 60px;
+    }
+    .title {
+      font-weight: 500;
+      font-family: @font-family-roboto-slab;
+      font-style: normal;
+      color: #DC052C;
+      font-size: 50px;
+      line-height: 40px;
+    }
+
+    .subtitle  {
+      font-family: @font-family-roboto-montserrat;
+      font-style: normal;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 32px;
+      line-height: 55px;
+
+    }
+
+    .text {
+      font-family: @font-family-roboto-montserrat;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 16px;
+      color: #000;
+      line-height: 28px;
+      margin-bottom: 30px;
+    }
+  }
+  .homepage-fuhrung-images {
+    .fuhrung-img {
+      position: absolute;
+    }
+    .fuhrung-img-2 {
+      z-index: 99;
+      top: 60px;
+      left: -5%;
+      img {
+        max-height: 330px;
+        height: 330px;
+
+      }
+    }
+    .fuhrung-img-1 {
+      right: 0;
+    }
+  }
 }

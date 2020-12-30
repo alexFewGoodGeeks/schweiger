@@ -3,6 +3,7 @@
 if( function_exists('nicdark_footers')){ do_action('nicdark_footer_nd'); }else{ ?>
 
 <!--START section-->
+
 <div class="nicdark_section nicdark_bg_greydark nicdark_text_align_center">
     
     <!--start container-->

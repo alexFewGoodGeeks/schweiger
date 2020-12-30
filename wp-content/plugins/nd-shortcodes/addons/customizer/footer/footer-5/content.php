@@ -7,7 +7,7 @@ if ( $nd_options_customizer_footer_5_content_page == '' ) { $nd_options_customiz
 
 ?>
 
-
+<?php /*
 <!--START footer-->
 <div id="nd_options_footer_5" class="nd_options_section">
 
@@ -48,4 +48,38 @@ if ( $nd_options_customizer_footer_5_content_page == '' ) { $nd_options_customiz
 
 </div>
 <!--END footer-->
+ <?php */ ?>
 
+<div class="nd_options_container">
+<div class="footer">
+    <div class="footer-images">
+        <?php for($i=1; $i<9; $i++) { ?>
+            <img class="footer-image" src="/wp-content/uploads/images/footer/footer_image<?php echo $i ?>.png" />
+        <?php } ?>
+    </div>
+    <div class="footer-buttons">
+            <a href="" class="btn-red">auf instagram folgen</a>
+            <a href="" class="btn-red">auf facebook folgen</a>
+    </div>
+    <div class="footer-section">
+      <ul class="footer-items">
+          <li class="copyright">
+              <p class="">
+                  © Schweiger 2020 Alle Rechte vorbehalten
+              </p>
+          </li>
+          <li class="logo">
+              <img src="/wp-content/uploads/images/footer_logo.png" />
+          </li>
+          <li class="links">
+              <ul>
+                  <li><a href="">Kontakt</li>
+                  <li><a href="">AGB</li>
+                  <li><a href="">Datenschutz</li>
+                  <li><a href="">Impressum</li>
+              </ul>
+          </li>
+      </ul>
+    </div>
+</div>
+</div>
