@@ -75,6 +75,9 @@
   .wp-block-columns {
     margin:0px;
     padding:0px;
+    &:last-child {
+      box-shadow: 0 15px 27px -25px grey;
+    }
   }
   .wp-block-column {
     margin:0px;
@@ -99,23 +102,51 @@
 
 ///wp-content/uploads/images/slow_brewing_header.png
 .start-shops {
+  margin-top: 8%;
+  .shop-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
   .images {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
   }
+  .ptext {
+    padding: 0 20% 5%;
+  }
 }
 
 .start-zertifiziert {
   background: url("/wp-content/uploads/images/slow_brewing_header.png");
   padding-top: 5%;
+  margin-top: 10%;
+  padding-bottom: 160px;
+  background-size: contain;
+  .wp-block-column:first-child {
+    position: relative;
+    .wp-block-image {
+      top: 55%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 1000;
+      img {
+        max-width: 80%;
+      }
+    }
+  }
   p {
     margin: 3% 20%;
   }
 }
 
 .start-fuhrung {
+  margin-top: 8%;
   .title {
     margin-top: 60px;
   }

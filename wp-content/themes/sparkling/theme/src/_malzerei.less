@@ -1,0 +1,126 @@
+@import "_variables";
+
+.malzerei-untrennbar-text {
+  .title{
+    text-align: center;
+  }
+  .subtitle {
+    text-align: center;
+  }
+  .text-wrapper {
+    .wp-block-column:nth-child(1) {
+        padding-left: 10%;
+    }
+    .wp-block-column:nth-child(2) {
+      padding-right: 10%;
+    }
+  }
+}
+
+
+.malzherstellung-wrapper {
+  background: url("/wp-content/uploads/images/malzherstellung_01.png");
+  background-size: contain;
+  .wp-block-column:nth-child(2) {
+    background: rgba(191, 37, 49, 0.8);
+    padding: 5% 5% 10% 5%;
+  }
+}
+
+.malzerei-text-image-title {
+ text-align: center;
+}
+.malzerei-text-image {
+
+    margin:0px;
+    padding:0px;
+    //&:last-child {
+    //  box-shadow: 0 15px 27px -25px grey;
+    //}
+  .wp-block-column {
+    margin:0px;
+    padding:0px;
+
+    .wp-block-columns {
+      margin: 0px;
+      padding: 0px;
+      &:first-child {
+        //box-shadow: 0 15px 27px -25px grey;
+        box-shadow: 0px -5px 20px -13px grey;
+
+      }
+      &:last-child {
+        box-shadow: 0 15px 27px -25px grey;
+      }
+      .wp-block-column {
+          margin: 0px;
+          padding: 0px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+        p {
+          text-align: center;
+          width: 85%;
+        }
+        .wp-block-image {
+          margin:0;
+          padding:0;
+        }
+      }
+    }
+  //.wp-block-columns {
+  //  margin: 0px;
+  //  padding: 0px;
+  //  display: flex;
+  //  flex-direction: column;
+  //  align-items: center;
+  //  justify-content: center;
+  //
+  //  .wp-block-image {
+  //    margin: 0px;
+  //    padding: 0px;
+  //  }
+  //
+  //  p {
+  //    text-align: center;
+  //    width: 85%;
+  //
+  //    &.box-text {
+  //      margin-bottom: 30px;
+  //    }
+  //  }
+  //}
+  }
+}
+
+.counter {
+  position: absolute;
+  top: 30px;
+
+  background: url(/wp-content/uploads/images/counter_circle.png);
+  background-size: contain;
+  height: 84px;
+  width: 84px;
+  &.left {
+    left: 30px;
+  }
+  &.right {
+    right: 30px;
+  }
+  .number {
+    font-family: @font-family-roboto-slab;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 73px;
+    /* identical to box height */
+
+    text-align: center;
+
+    /* cd/red */
+
+    color: @color-red-primary;
+  }
+}

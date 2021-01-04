@@ -37,6 +37,9 @@
   .navbar {
     background: @color-white;
     z-index: 100;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 15px 27px -25px grey;
     //background: green;
     @media (max-width: 1200px) {
       li {
@@ -108,6 +111,7 @@
   .single-featured {
     z-index: -999;
     margin-top: -165px;
+    filter: brightness(90%);
   }
   .dropdown-menu > li > a {
     font-family: @font-family-roboto-montserrat;
