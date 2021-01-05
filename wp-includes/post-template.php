@@ -691,7 +691,13 @@ function get_body_class( $class = '' ) {
 
 			$page_id = $wp_query->get_queried_object_id();
 
+
 			$post = get_post( $page_id );
+
+            /**
+             * add page name as class in body
+             */
+			$classes[] = $post->post_name;
 
 			$classes[] = 'page-id-' . $page_id;
 

@@ -756,7 +756,7 @@ body {
   color: #fff;
 }
 .single-featured {
-  margin-top: -100px;
+  margin-top: -40px;
   width: 100%;
   height: 100%;
   z-index: 99;
@@ -828,8 +828,8 @@ body {
   top: 30px;
   background: url(/wp-content/uploads/images/counter_circle.png);
   background-size: contain;
-  height: 84px;
-  width: 84px;
+  height: 70px;
+  width: 72px;
 }
 .counter.left {
   left: 30px;
@@ -841,10 +841,128 @@ body {
   font-family: 'Roboto Slab', serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 55px;
-  line-height: 73px;
+  font-size: 48px;
+  line-height: 66px;
   /* identical to box height */
   text-align: center;
   /* cd/red */
   color: #DC052C;
+}
+.header-text.historie {
+  top: 9% !important;
+}
+.historie-text .title,
+.historie-text .subtitle {
+  text-align: center;
+}
+.historie-text .text-wrapper .wp-block-column:nth-child(1) {
+  padding-left: 10%;
+}
+.historie-text .text-wrapper .wp-block-column:nth-child(2) {
+  padding-right: 10%;
+}
+.header-text.team {
+  top: 13% !important;
+}
+.team-text .title,
+.team-text .subtitle {
+  text-align: center;
+}
+.team-text .ptext {
+  text-align: center;
+  padding: 0 10%;
+}
+.header-text.biere {
+  top: 13%;
+}
+.biere-text .title,
+.biere-text .subtitle {
+  text-align: center;
+}
+.biere-text .ptext {
+  text-align: center;
+  padding: 0 10%;
+}
+.slow-brewing-zertifizierte-wrapper {
+  background: url("/wp-content/uploads/images/slow_brewing_zertifizierte.png");
+  background-size: cover;
+}
+.slow-brewing-zertifizierte-wrapper .wp-block-column:nth-child(1) {
+  background: rgba(191, 37, 49, 0.8);
+  padding: 5% 5% 10% 5%;
+}
+.slow-brewing-zertifizierte-wrapper .wp-block-column:nth-child(2) {
+  position: relative;
+}
+.slow-brewing-zertifizierte-wrapper .wp-block-column:nth-child(2) .wp-block-image {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+.slow-brewing-zertifizierte-wrapper .wp-block-column:nth-child(2) .wp-block-image img {
+  max-width: 80%;
+}
+.slow-brewing-text-image-title .slow-brewing-title {
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+}
+.slow-brewing-text-image-title .slow-brewing-title-red {
+  color: #DC052C;
+  font-family: 'Roboto Slab', serif;
+  font-size: 48px;
+  font-weight: 500;
+}
+.slow-brewing-image-title {
+  margin: 0;
+  padding: 0;
+}
+.slow-brewing-image-title .wp-block-column .first-row {
+  box-shadow: 0px -5px 20px -13px grey;
+}
+.slow-brewing-image-title .wp-block-column .last-row {
+  box-shadow: 0 15px 27px -25px grey;
+}
+.slow-brewing-image-title .wp-block-column .wp-block-columns {
+  margin: 0;
+  padding: 0;
+}
+.slow-brewing-image-title .wp-block-column .wp-block-columns .wp-block-column {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.slow-brewing-image-title .wp-block-column .wp-block-columns .wp-block-column p {
+  text-align: center;
+  width: 85%;
+}
+.slow-brewing-image-title .wp-block-column .wp-block-columns .wp-block-column .wp-block-image {
+  margin: 0;
+  padding: 0;
+}
+.slow-brewing-video {
+  margin-top: 100px;
+}
+.slow-brewing-video .title,
+.slow-brewing-video .subtitle {
+  text-align: center;
+}
+.slow-brewing-video .ptext {
+  text-align: center;
+  padding: 0 10%;
+  margin-bottom: 50px;
+}
+.slow-brewing-video .video {
+  width: 80%;
+  margin: auto;
 }

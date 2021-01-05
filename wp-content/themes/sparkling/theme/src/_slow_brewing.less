@@ -1,0 +1,100 @@
+@import "_variables";
+
+.slow-brewing-zertifizierte-wrapper {
+  background: url("/wp-content/uploads/images/slow_brewing_zertifizierte.png");
+  background-size: cover;
+  .wp-block-column:nth-child(1) {
+    background: rgba(191, 37, 49, 0.8);
+    padding: 5% 5% 10% 5%;
+  }
+  .wp-block-column:nth-child(2) {
+    position: relative;
+    .wp-block-image {
+      position: absolute;
+      bottom: 5%;
+      right: 5%;
+      img {
+        max-width: 80%;
+      }
+    }
+  }
+}
+
+.slow-brewing-text-image-title {
+  .slow-brewing-title {
+    display: flex;
+    justify-content: center;
+    font-family: @font-family-roboto-montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    text-transform: uppercase;
+    text-align: center;
+    color: @color-black;
+  }
+  .slow-brewing-title-red {
+    color: @color-red-primary;
+    font-family: @font-family-roboto-slab;
+    font-size: 48px;
+    font-weight: 500;
+  }
+}
+
+.slow-brewing-image-title {
+  margin: 0;
+  padding: 0;
+  .wp-block-column {
+
+    .first-row {
+      box-shadow: 0px -5px 20px -13px grey;
+    }
+    .last-row {
+      box-shadow: 0 15px 27px -25px grey;
+    }
+    .wp-block-columns {
+      margin: 0;
+      padding: 0;
+      //&:first-child {
+      //  //box-shadow: 0 15px 27px -25px grey;
+      //  box-shadow: 0px -5px 20px -13px grey;
+      //
+      //}
+      //&:last-child {
+      //  box-shadow: 0 15px 27px -25px grey;
+      //}
+      .wp-block-column {
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        p {
+          text-align: center;
+          width: 85%;
+        }
+        .wp-block-image {
+          margin:0;
+          padding:0;
+        }
+      }
+    }
+  }
+}
+
+.slow-brewing-video {
+  margin-top: 100px;
+  .title, .subtitle {
+    text-align: center;
+  }
+  .ptext {
+    text-align: center;
+    padding: 0 10%;
+    margin-bottom: 50px;
+  }
+  .video {
+    width: 80%;
+    margin: auto;
+  }
+}
