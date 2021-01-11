@@ -16,7 +16,7 @@
            <div class="footer-images-wrapper">
                 <div class="row">
                     <?php for($i=1;$i<9;$i++) { ?>
-                        <div class="col-md-3 col-sm-3 col-xs-12 single-image-wrapper">
+                        <div class="col-md-3 col-sm-6 col-xs-6 single-image-wrapper">
                             <img src="/wp-content/uploads/images/footer/footer_image<?php echo $i ?>.png" />
                         </div>
                     <?php } ?>
