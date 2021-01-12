@@ -155,11 +155,16 @@
   border-collapse: separate;
   border-spacing: 15px;
   margin: -15px -15px;
+  img {
+    display: block;
+    min-width: 100%;
+  }
   .image-left {
     min-width: 270px;
   }
   .image-right {
     min-height: 270px;
+    min-width: 270px;
   }
   .middle {
 
@@ -174,9 +179,11 @@
     flex: 1;
     height: 100%;
     min-height: 270px;
+    background: @color-gray-primary;
     .left {
       flex: 1;
       background: @color-gray-primary;
+      margin-right: 20px;
     }
     .right {
       flex: 1;
@@ -200,6 +207,10 @@
   border-collapse: separate;
   border-spacing: 15px;
   margin: -15px -15px;
+  img {
+    display: block;
+    min-width: 100%;
+  }
   .big-image {
     min-width: 100%;
   }
@@ -238,5 +249,39 @@
       .textstyle;
     }
 
+  }
+}
+
+.team-contact {
+  background: url("/wp-content/uploads/images/team_background_1.png");
+  background-size: cover;
+  .wp-block-columns {
+    margin-bottom: 0;
+  }
+  .team-contact-content {
+    background: rgba(191, 37, 49, 0.8);
+    padding: 5% 0% 10% 5%;
+    .ptext {
+      padding-right: 20%;
+    }
+    .contact-details {
+      margin-top: 40px;
+      .ptext {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .phone-icon {
+      &:before {
+        content: url("/wp-content/uploads/images/phone_icon.png");
+        margin-right: 10px;
+      }
+    }
+    .letter-icon {
+      &:before {
+        content: url("/wp-content/uploads/images/letter_icon.png");
+        margin-right: 10px;
+      }
+    }
   }
 }
