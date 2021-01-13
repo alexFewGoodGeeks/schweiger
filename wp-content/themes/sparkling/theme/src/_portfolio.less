@@ -3,7 +3,24 @@
 .tlp-portfolio-isotope {
   margin-left: 20px;
 }
-
+.tlp-portfolio .img-responsive {
+  width: 100%;
+}
+.tlp-overlay {
+  display: none !important;
+  align-items: center;
+  justify-content: center;
+}
+.tlp-portfolio-thum {
+  &:before {
+    content: url("/wp-content/uploads/images/portfolio_arrow.png");
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    //cursor: pointer;
+    z-index: 9999999;
+  }
+}
 .tlp-portfolio-isotope-button.filter-button-group {
   @media (max-width: 992px) {
     button {

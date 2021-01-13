@@ -56,6 +56,7 @@
 
     window.initTlpPortfolio = function () {
         $(".tlp-portfolio-container").each(function () {
+
             var container = $(this),
                 isIsotope = container.hasClass("is-isotope"),
                 isCarousel = container.find('is-carousel');
@@ -64,12 +65,14 @@
                 container.imagesLoaded().progress(function (instance, image) {
                     container.trigger('pfp_image_loading');
                 }).done(function (instance) {
+
                     container.trigger('pfp_item_before_load');
                     if (isIsotope) {
                         var isoHolder = container.find('.tlp-portfolio-isotope');
                         if (isoHolder.length) {
                             isoHolder.isotope({
                                 itemSelector: '.tlp-isotope-item',
+                                layoutMode: 'fitRows',
                             });
                             container.trigger('pfp_item_after_load');
                             setTimeout(function () {
@@ -89,6 +92,7 @@
                                 var filterValue = $('option:selected', this).attr('data-filter');
                                 isoHolder.isotope({filter: filterValue});
                             });
+
                         }
                     }
                     setTimeout(function () {

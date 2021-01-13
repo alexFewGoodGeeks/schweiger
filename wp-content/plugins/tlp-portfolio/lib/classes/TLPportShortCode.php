@@ -223,6 +223,9 @@ if ( ! class_exists( 'TLPportShortCode' ) ):
 					if ( $isCarousel ) {
 						$class[] = 'is-carousel';
 					}
+                    /**
+                     * $scMeta[php_categories]
+                     */
 					$html .= $this->customStyle( $layoutID, $scMeta, true, $preview );
 					if ( $portfolioQuery->have_posts() ) {
 						$html .= sprintf( '<div class="%s" id="%s"><div class="rt-row %s">', implode( ' ', $class ), $layoutID, $layout );
@@ -234,9 +237,10 @@ if ( ! class_exists( 'TLPportShortCode' ) ):
 								'hide_empty' => false,
 							) ) );
 
+
 							if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) {
 								$html .= sprintf( '<div class="tlp-portfolio-isotope-button button-group filter-button-group option-set"><button data-filter="*" class="selected">%s</button>', __( "Show all", "tlp-portfolio" ) );
-
+                                $cat_ids = $scMeta['pfp_categories']; //print_r($cat_ids); die;
 								foreach ( $terms as $term ) {
 									if ( ! empty( $cat_ids ) ) {
 										if ( in_array( $term->term_id, $cat_ids ) ) {
