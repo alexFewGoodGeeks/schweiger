@@ -1562,6 +1562,9 @@ body {
 .wpsl-select-wrap {
   margin-bottom: 0px;
 }
+.tlp-portfolio-isotope {
+  margin-left: 20px;
+}
 @media (max-width: 992px) {
   .tlp-portfolio-isotope-button.filter-button-group button {
     display: none;
@@ -1577,9 +1580,6 @@ body {
   .tlp-portfolio-isotope-button.filter-button-group select {
     display: none;
   }
-}
-.tlp-portfolio-isotope-button.filter-button-group .tlp-portfolio-isotope {
-  margin-left: 20px;
 }
 .tlp-portfolio-isotope-button.filter-button-group button {
   border-radius: 50px;
@@ -1617,4 +1617,17 @@ body {
   line-height: 22px;
   text-transform: uppercase;
   color: #000;
+}
+.downloads-wrapper {
+  background: #f8f8f8;
+  padding-bottom: 80px;
+}
+.downloads-wrapper .downloads-title {
+  margin-top: 120px;
+}
+.downloads-wrapper .downloads-title .subtitle {
+  text-align: center;
+}
+.header-text.erleben {
+  top: 13%;
 }
