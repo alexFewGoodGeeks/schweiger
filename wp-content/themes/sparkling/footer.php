@@ -38,7 +38,27 @@
 			</div>
 		</div>
 
-		<footer id="colophon" class="site-footer" role="contentinfo">
+        <footer class="site-footer-mobile footer-m">
+            <div class="footer-m-wrapper">
+                <div class="logo mobile">
+                    <img src="/wp-content/uploads/images/footer_logo.png" class="footer-logo-m"/>
+                </div>
+            </div>
+            <div class="container">
+                <div class="col-sm-12">
+                    <div class="copyright-mobile">
+                    <?php echo of_get_option( 'custom_footer_text', 'sparkling' ); ?>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="footer-links-mobile">
+                        <?php sparkling_footer_links(); ?>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+		<footer id="colophon" class="site-footer footer-d" role="contentinfo">
 			<div class="site-info container">
 				<div class="row footer-info-wrapper">
                     <div class="col-lg-4 col-md-5 copyright">

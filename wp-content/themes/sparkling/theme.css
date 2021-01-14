@@ -144,6 +144,10 @@ body {
   background-color: #DC052C;
   color: #fff;
 }
+a.s-btn-red:hover {
+  color: #fff !important;
+  background: #DC052C !important;
+}
 .s-btn-gray {
   background-color: #E5E5E5;
   color: #DC052C;
@@ -177,6 +181,63 @@ body {
   font-size: 16px;
   text-transform: uppercase;
   color: #DC052C !important;
+}
+.page-template-white-header-template .navbar,
+.page-template-historie-template .navbar,
+.page-template-team-template .navbar {
+  background: #fff;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 15px 27px -25px grey;
+}
+@media (max-width: 1200px) {
+  .page-template-white-header-template .navbar li,
+  .page-template-historie-template .navbar li,
+  .page-template-team-template .navbar li {
+    padding: 8px;
+  }
+}
+.page-template-white-header-template .dropdown-menu > li:hover,
+.page-template-historie-template .dropdown-menu > li:hover,
+.page-template-team-template .dropdown-menu > li:hover {
+  background: #fff;
+}
+.page-template-white-header-template .dropdown-menu > li > a,
+.page-template-historie-template .dropdown-menu > li > a,
+.page-template-team-template .dropdown-menu > li > a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000;
+}
+.page-template-white-header-template .dropdown-menu > li > a:hover,
+.page-template-historie-template .dropdown-menu > li > a:hover,
+.page-template-team-template .dropdown-menu > li > a:hover {
+  background: #fff;
+}
+.page-template-white-header-template .navbar-default .navbar-nav > li > a,
+.page-template-historie-template .navbar-default .navbar-nav > li > a,
+.page-template-team-template .navbar-default .navbar-nav > li > a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000;
+}
+.navbar-default .navbar-nav li ul li a:hover {
+  font-weight: 600;
+  color: #DC052C;
+}
+.current-menu-item.active {
+  background: none !important;
+}
+.current-menu-item.active a {
+  color: #DC052C;
+}
+.current-menu-item.active a:hover {
+  color: #DC052C;
 }
 .start-welcome {
   padding: 5% 5%;
@@ -628,7 +689,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
 }
-.site-footer .footer-info-wrapper #menu-footer-menu a {
+.site-footer .footer-info-wrapper #menu-footer-menu-1 a {
   color: #fff;
   font-size: 12px;
   font-weight: 500;
@@ -648,6 +709,75 @@ body {
   align-items: center;
   justify-content: center;
   gap: 20px;
+}
+@media (max-width: 768px) {
+  .footer-buttons-wrapper .footer-buttons {
+    flex-direction: column;
+  }
+}
+.site-footer-mobile .footer-m-wrapper {
+  background: linear-gradient(89.98deg, #DC052C 0.02%, #BF2531 99.98%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 40px;
+}
+.site-footer-mobile .footer-m-wrapper .logo.mobile {
+  position: absolute;
+  top: -79px;
+}
+.site-footer-mobile .footer-m-wrapper .logo.mobile img {
+  background: white;
+  width: 110px;
+}
+.site-footer-mobile .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.site-footer-mobile .container .copyright-mobile {
+  padding: 30px;
+  text-align: center;
+}
+.site-footer-mobile .container .footer-links-mobile #menu-footer-menu {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.site-footer-mobile .container .footer-links-mobile #menu-footer-menu li a {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #000000;
+}
+@media (min-width: 992px) {
+  .footer-d {
+    display: block;
+  }
+  .footer-m {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .footer-d {
+    display: none;
+  }
+  .footer-m {
+    display: block;
+  }
 }
 .site-header .site-navigation-inner {
   display: flex;
@@ -682,50 +812,6 @@ body {
 }
 .site-header #menu-left-menu {
   padding-right: 35px;
-}
-.page-template-white-header-template .navbar,
-.page-template-historie-template .navbar,
-.page-template-team-template .navbar {
-  background: #fff;
-  z-index: 100;
-  position: fixed;
-  width: 100%;
-  box-shadow: 0 15px 27px -25px grey;
-}
-@media (max-width: 1200px) {
-  .page-template-white-header-template .navbar li,
-  .page-template-historie-template .navbar li,
-  .page-template-team-template .navbar li {
-    padding: 8px;
-  }
-}
-.page-template-white-header-template .dropdown-menu > li:hover,
-.page-template-historie-template .dropdown-menu > li:hover,
-.page-template-team-template .dropdown-menu > li:hover {
-  background: #fff;
-}
-.page-template-white-header-template .dropdown-menu > li > a,
-.page-template-historie-template .dropdown-menu > li > a,
-.page-template-team-template .dropdown-menu > li > a {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #000;
-}
-.page-template-white-header-template .dropdown-menu > li > a:hover,
-.page-template-historie-template .dropdown-menu > li > a:hover,
-.page-template-team-template .dropdown-menu > li > a:hover {
-  background: #fff;
-}
-.page-template-white-header-template .navbar-default .navbar-nav > li > a,
-.page-template-historie-template .navbar-default .navbar-nav > li > a,
-.page-template-team-template .navbar-default .navbar-nav > li > a {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #000;
 }
 .languages .flag-wrapper .flag {
   height: 35px;
@@ -881,6 +967,9 @@ body {
 }
 .historie-text .text-wrapper .wp-block-column:nth-child(2) {
   padding-right: 10%;
+}
+.timeline-wrapper {
+  position: relative;
 }
 .timeline-wrapper .row {
   display: flex;
@@ -1079,6 +1168,36 @@ body {
 .row-2008 .content-wrapper .timeline-image {
   flex-grow: 1;
   flex-basis: 0;
+}
+.row-1935 {
+  margin-top: -60px;
+}
+.row-1949 {
+  margin-top: -80px;
+}
+.row-1963 {
+  margin-top: -100px;
+}
+.row-1973 {
+  margin-top: -115px;
+}
+.row-1989 {
+  margin-top: -60px;
+}
+.row-1998 {
+  margin-top: -40px;
+}
+.row-2003 {
+  margin-top: -70px;
+}
+.row-2008 {
+  margin-top: -80px;
+}
+.row-2013 {
+  margin-top: -90px;
+}
+.row-2016 {
+  margin-top: -75px;
 }
 @media (max-width: 992px) {
   .timeline-wrapper .row:nth-child(even) {
@@ -1332,6 +1451,7 @@ body {
   align-items: center;
   flex: 1;
   padding: 0 11%;
+  margin-top: 15%;
 }
 #team-four .content .text-wrapper h6 {
   font-family: 'Montserrat', sans-serif;
