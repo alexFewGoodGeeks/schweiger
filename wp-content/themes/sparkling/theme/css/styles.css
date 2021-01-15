@@ -112,6 +112,11 @@ body {
   padding: 0px;
   margin: 0px;
 }
+@media (min-width: 1400px) {
+  .container {
+    width: 1400px;
+  }
+}
 .table > tbody > tr > td,
 .table > tbody > tr > th,
 .table > tfoot > tr > td,
@@ -182,6 +187,9 @@ a.s-btn-red:hover {
   text-transform: uppercase;
   color: #DC052C !important;
 }
+.navbar-collapse {
+  padding: 0;
+}
 .page-template-white-header-template .navbar,
 .page-template-historie-template .navbar,
 .page-template-team-template .navbar {
@@ -239,8 +247,69 @@ a.s-btn-red:hover {
 .current-menu-item.active a:hover {
   color: #DC052C;
 }
+.homepage-slider {
+  position: absolute;
+  top: -170px;
+}
+.homepage-slider .slider-text {
+  position: absolute;
+  right: 5%;
+  top: 21%;
+  z-index: 110;
+  text-align: right;
+}
+.homepage-slider .slider-text .slider-title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 59px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+.homepage-slider .slider-text .slider-ptext {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 50px;
+  padding-left: 66%;
+  text-align: right;
+  color: #FFFFFF;
+}
+.homepage-slider .slider-text .slider-button {
+  background: #fff;
+  border-radius: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #DC052C;
+  padding: 10px 30px;
+}
+.homepage-slider .slider-red-stripe {
+  position: absolute;
+  height: 100%;
+  /* background: red; */
+  width: 20%;
+  right: 0;
+  top: 0;
+  background: rgba(191, 37, 49, 0.8);
+  z-index: 100;
+}
 .start-welcome {
+  margin-top: 55%;
   padding: 5% 5%;
+}
+@media (min-width: 1400px) {
+  .start-welcome {
+    padding: 5% 12%;
+  }
 }
 .start-welcome div:nth-child(2) {
   margin-left: 25px;
@@ -380,12 +449,22 @@ a.s-btn-red:hover {
 .start-fuhrung {
   margin-top: 8%;
 }
+@media (min-width: 1400px) {
+  .start-fuhrung {
+    padding: 5% 12%;
+  }
+}
 .start-fuhrung .title {
   margin-top: 60px;
 }
 .start-fuhrung .ptext {
   width: 70%;
   margin-bottom: 30px;
+}
+@media (min-width: 1400px) {
+  .start-fuhrung .ptext {
+    width: 80%;
+  }
 }
 .start-fuhrung > div {
   position: relative;
@@ -779,6 +858,16 @@ a.s-btn-red:hover {
     display: block;
   }
 }
+.site-header .logo-wrapper {
+  min-width: 120px;
+}
+.site-header .header-wrapper {
+  display: flex;
+  align-items: center;
+}
+.site-header .left-nav-wrapper {
+  margin-left: 210px;
+}
 .site-header .site-navigation-inner {
   display: flex;
   align-content: space-evenly;
@@ -803,7 +892,7 @@ a.s-btn-red:hover {
   }
 }
 .site-header #menu-right-menu {
-  padding-left: 160px;
+  padding-left: 20px;
 }
 @media (max-width: 1200px) {
   .site-header #menu-right-menu {
@@ -811,7 +900,7 @@ a.s-btn-red:hover {
   }
 }
 .site-header #menu-left-menu {
-  padding-right: 35px;
+  padding-right: 0px;
 }
 .languages .flag-wrapper .flag {
   height: 35px;
@@ -1765,4 +1854,23 @@ a.s-btn-red:hover {
 }
 .header-text.erleben {
   top: 13%;
+}
+.flexslider .slides li img {
+  height: 110vh;
+  filter: brightness(90%);
+}
+.flexslider .flex-control-nav {
+  position: absolute;
+  bottom: 60px !important;
+  left: 86% !important;
+  width: 30%;
+  z-index: 400 !important;
+}
+.flex-control-paging li a {
+  width: 70px !important;
+  height: 5px !important;
+  background: white !important;
+}
+.flex-control-paging li a.flex-active {
+  background: linear-gradient(90deg, #DC052C 80%, #ffffff 20%) !important;
 }

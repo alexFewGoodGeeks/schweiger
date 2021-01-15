@@ -21,3 +21,17 @@ get_header(); ?>
 <?php
 
 get_footer();
+
+?>
+
+<script>
+    jQuery(function() {
+        const redStripeHtml = "<div class='slider-red-stripe'></div>";
+        const flexSliderSelector = jQuery(".flexslider");
+
+
+            flexSliderSelector.append(redStripeHtml);
+
+
+    })
+</script>

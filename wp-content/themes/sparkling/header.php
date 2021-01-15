@@ -35,7 +35,7 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && ( strpos( $_SERVER['HTTP_USER_AGENT
 <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 <div id="page" class="hfeed site">
 
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header header-d" role="banner">
 		<nav class="navbar navbar-default
 		<?php
 		if ( of_get_option( 'sticky_header' ) ) {
@@ -43,20 +43,17 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && ( strpos( $_SERVER['HTTP_USER_AGENT
 ?>
 " role="navigation">
 			<div class="container">
-				<div class="row">
+				<div class="row header-wrapper">
 					<div class="site-navigation-inner col-sm-12">
-						<div class="navbar-header">
-							<button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-						</div>
+<!--						<div class="navbar-header">-->
+<!--							<button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">-->
+<!--								<span class="sr-only">Toggle navigation</span>-->
+<!--								<span class="icon-bar"></span>-->
+<!--								<span class="icon-bar"></span>-->
+<!--								<span class="icon-bar"></span>-->
+<!--							</button>-->
+<!--						</div>-->
 
-
-
-						<?php //sparkling_header_menu(); // main navigation ?>
                         <div class="left-nav-wrapper">
                             <?php sparkling_left_menu(); ?>
                         </div>
@@ -67,15 +64,14 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && ( strpos( $_SERVER['HTTP_USER_AGENT
                         </div>
                         <div class="right-nav-wrapper">
                             <?php sparkling_right_menu(); ?>
-
                         </div>
                         <div class="languages">
                             <div class="flag-wrapper">
                                 <img src="/wp-content/uploads/images/flag_de.png" class="flag" />
                             </div>
                         </div>
-
 					</div>
+
 				</div>
 			</div>
 		</nav><!-- .site-navigation -->
