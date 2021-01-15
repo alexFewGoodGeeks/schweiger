@@ -1,6 +1,68 @@
 @import "_variables";
 
+.homepage-slider {
+  position: absolute;
+  top: -170px;
+  .slider-text {
+    position: absolute;
+    right: 5%;
+    top: 21%;
+    z-index: 110;
+    text-align: right;
+    .slider-title {
+      font-family: @font-family-roboto-montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 59px;
+      text-align: right;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    }
+    .slider-ptext {
+      font-family: @font-family-roboto-montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 50px;
+      padding-left:66%;
+      text-align: right;
+
+      color: #FFFFFF;
+
+    }
+    .slider-button {
+      background: @color-white;
+      border-radius: 50px;
+      font-family: @font-family-roboto-montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 28px;
+      text-transform: uppercase;
+      color: #DC052C;
+      padding: 10px 30px;
+    }
+  }
+  .slider-red-stripe {
+    position: absolute;
+    height: 100%;
+    /* background: red; */
+    width: 20%;
+    right: 0;
+    top: 0;
+    background: rgba(191, 37, 49, 0.8);
+    z-index: 100;
+  }
+}
+
 .start-welcome {
+  @media (min-width: 1400px) {
+    padding: 5% 12%;
+  }
+  margin-top: 55%;
   padding: 5% 5%;
   div:nth-child(2) {
     margin-left: 25px;
@@ -146,11 +208,17 @@
 }
 
 .start-fuhrung {
+  @media (min-width: 1400px) {
+    padding: 5% 12%;
+  }
   margin-top: 8%;
   .title {
     margin-top: 60px;
   }
   .ptext {
+    @media(min-width: 1400px) {
+      width: 80%;
+    }
     width: 70%;
     margin-bottom: 30px;
   }

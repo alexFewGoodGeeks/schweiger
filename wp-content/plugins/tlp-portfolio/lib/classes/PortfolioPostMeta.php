@@ -39,6 +39,7 @@ if (!class_exists('PortfolioPostMeta')):
             $meta = get_post_meta($post->ID);
             $short_description = !isset($meta['short_description'][0]) ? '' : $meta['short_description'][0];
             $project_url = !isset($meta['project_url'][0]) ? '' : $meta['project_url'][0];
+            $project_url = !isset($meta['external_url'][0]) ? '' : $meta['external_url'][0];
             $tools = !isset($meta['tools'][0]) ? '' : $meta['tools'][0];
             ?>
             <div class="portfolio-field-holder">
@@ -71,6 +72,15 @@ if (!class_exists('PortfolioPostMeta')):
                         <p class="description"><?php esc_html_e('Add the tools which are used in this project', 'tlp-portfolio') ?></p>
                     </div>
                 </div>
+                <div class="rt-field-wrapper">
+                    <div class="rt-label">
+                        <label for="project_url"><?php esc_html_e('External URL', "tlp-portfolio"); ?></label>
+                    </div>
+                    <div class="rt-field">
+                        <input type="url" name="external_url" class="rt-from-control"
+                               value="<?php echo $external_url; ?>">
+                    </div>
+                </div>
             </div>
             <?php
         }
@@ -94,6 +104,7 @@ if (!class_exists('PortfolioPostMeta')):
 
             $meta['short_description'] = (isset($_POST['short_description']) ? wp_kses_post($_POST['short_description']) : '');
             $meta['project_url'] = (isset($_POST['project_url']) ? esc_attr($_POST['project_url']) : '');
+            $meta['external_url'] = (isset($_POST['project_url']) ? esc_attr($_POST['external_url']) : '');
             $meta['tools'] = (isset($_POST['tools']) ? esc_attr($_POST['tools']) : '');
 
             foreach ($meta as $key => $value) {
