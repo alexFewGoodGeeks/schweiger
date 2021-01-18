@@ -27,10 +27,10 @@ get_footer();
 <script>
     jQuery(function() {
         const redStripeHtml = "<div class='slider-red-stripe'></div>";
+        const separator = "<div class='separator-bottom separator-homepage-top'></div>";
         const flexSliderSelector = jQuery(".flexslider");
-
-
-            flexSliderSelector.append(redStripeHtml);
+        flexSliderSelector.append(redStripeHtml);
+        flexSliderSelector.append(separator);
 
 
     })

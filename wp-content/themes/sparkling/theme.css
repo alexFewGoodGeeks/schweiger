@@ -117,6 +117,21 @@ body {
     width: 1400px;
   }
 }
+.separator-wrapper {
+  position: relative;
+}
+.separator-top {
+  background: url("/wp-content/uploads/images/separator_top.png");
+  position: absolute;
+  width: 100%;
+  height: 137px;
+}
+.separator-bottom {
+  background: url("/wp-content/uploads/images/separator_bottom.png");
+  position: absolute;
+  width: 100%;
+  height: 137px;
+}
 .table > tbody > tr > td,
 .table > tbody > tr > th,
 .table > tfoot > tr > td,
@@ -302,14 +317,21 @@ a.s-btn-red:hover {
   background: rgba(191, 37, 49, 0.8);
   z-index: 100;
 }
+.homepage-slider .separator-homepage-top {
+  z-index: 99999;
+  bottom: -35px;
+}
 .start-welcome {
-  margin-top: 55%;
+  margin-top: 45%;
   padding: 5% 5%;
 }
 @media (min-width: 1400px) {
   .start-welcome {
     padding: 5% 12%;
   }
+}
+.start-welcome div:nth-child(1) {
+  position: relative;
 }
 .start-welcome div:nth-child(2) {
   margin-left: 25px;
@@ -356,11 +378,29 @@ a.s-btn-red:hover {
     max-width: 66%;
   }
 }
+.start-welcome .arrow-willkommen {
+  background: url("/wp-content/uploads/images/arrows/arrow_willkommen.png");
+  height: 170px;
+  width: 225px;
+  position: absolute;
+  right: -17%;
+  z-index: 99;
+  bottom: -30%;
+}
+.separator-quotes {
+  top: 80px;
+  position: absolute;
+}
 .start-quote {
-  padding: 10% 15%;
+  padding: 10% 15% 5% 15%;
   background: #E5E5E5;
-  margin: 0px;
+  margin: 0;
   margin-top: 100px;
+}
+.start-quote .quotes-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 .start-quote .main-text {
   text-align: center;
@@ -377,6 +417,7 @@ a.s-btn-red:hover {
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
+  margin-top: 30px;
   color: #000;
 }
 .start-text-image .wp-block-columns {
@@ -387,6 +428,7 @@ a.s-btn-red:hover {
   box-shadow: 0 15px 27px -25px grey;
 }
 .start-text-image .wp-block-column {
+  position: relative;
   margin: 0px;
   padding: 0px;
   display: flex;
@@ -405,8 +447,38 @@ a.s-btn-red:hover {
 .start-text-image .wp-block-column p.box-text {
   margin-bottom: 30px;
 }
+.start-text-image .arrow-unser-versprechen {
+  background: url("/wp-content/uploads/images/arrows/arrow_unser_versprechen.png");
+  position: absolute;
+  width: 113px;
+  height: 103px;
+  right: -8%;
+  top: 17%;
+  z-index: 99;
+}
+.start-text-image .arrow-nachhaltigkeit {
+  background: url("/wp-content/uploads/images/arrows/arrow_nachhaltigkeit.png");
+  width: 113px;
+  height: 103px;
+  position: absolute;
+  bottom: 0;
+  left: -9%;
+}
+.start-text-image .arrow-qualitat {
+  background: url("/wp-content/uploads/images/arrows/arrow_qualitat.png");
+  width: 113px;
+  height: 103px;
+  bottom: 10%;
+  z-index: 99;
+  right: -9%;
+  position: absolute;
+}
 .start-shops {
   margin-top: 8%;
+  margin-bottom: 8%;
+}
+.start-shops .wp-block-column {
+  position: relative;
 }
 .start-shops .shop-buttons {
   display: flex;
@@ -423,18 +495,27 @@ a.s-btn-red:hover {
 .start-shops .ptext {
   padding: 0 20% 5%;
 }
+.start-shops .arrow_besteauswahl {
+  position: absolute;
+  width: 93px;
+  height: 176px;
+  right: 15%;
+  background: url(/wp-content/uploads/images/arrows/arrow_besteauswahl.png);
+  top: 10%;
+}
 .start-zertifiziert {
   background: url("/wp-content/uploads/images/slow_brewing_header.png");
-  padding-top: 5%;
-  margin-top: 10%;
+  filter: brightness(90%);
+  padding-top: 8%;
   padding-bottom: 160px;
-  background-size: contain;
+  background-size: cover;
 }
 .start-zertifiziert .wp-block-column:first-child {
   position: relative;
+  padding-top: 85px;
 }
 .start-zertifiziert .wp-block-column:first-child .wp-block-image {
-  top: 55%;
+  top: 61%;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -446,8 +527,19 @@ a.s-btn-red:hover {
 .start-zertifiziert p {
   margin: 3% 20%;
 }
-.start-fuhrung {
-  margin-top: 8%;
+.start-zertifiziert .arrow-zertifiziert {
+  background: url("/wp-content/uploads/images/arrows/arrow_zertifiziert.png");
+  position: absolute;
+  width: 184px;
+  height: 115px;
+  right: 26%;
+  bottom: 2%;
+}
+.separator-top-zertifiret {
+  z-index: 99;
+}
+.separator-bottom-zertifizerit {
+  top: -127px;
 }
 @media (min-width: 1400px) {
   .start-fuhrung {
@@ -1857,11 +1949,12 @@ a.s-btn-red:hover {
 }
 .flexslider .slides li img {
   height: 110vh;
+  max-height: 850px !important;
   filter: brightness(90%);
 }
 .flexslider .flex-control-nav {
   position: absolute;
-  bottom: 60px !important;
+  bottom: 15% !important;
   left: 86% !important;
   width: 30%;
   z-index: 400 !important;
