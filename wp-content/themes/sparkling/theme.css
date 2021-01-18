@@ -840,7 +840,6 @@ a.s-btn-red:hover {
 .site-footer .footer-logo {
   text-align: center;
   bottom: -16px;
-  background: white;
   position: absolute;
   left: 0;
   right: 0;
@@ -1053,6 +1052,25 @@ a.s-btn-red:hover {
 .single-featured:hover {
   opacity: 1;
 }
+.header-text.malzerei {
+  top: 8%;
+}
+.arrow-malzerei-header {
+  background: url("/wp-content/uploads/images/arrows/arrow_malzerrei.png");
+  position: absolute;
+  top: 220px;
+  height: 115px;
+  width: 97px;
+  right: 48%;
+}
+.arrow_die_exkluzive {
+  background: url("/wp-content/uploads/images/arrows/arrow_die_exkluzive.png");
+  position: absolute;
+  width: 195px;
+  height: 151px;
+  right: 86%;
+  bottom: 3%;
+}
 .malzerei-untrennbar-text .title {
   text-align: center;
 }
@@ -1065,15 +1083,26 @@ a.s-btn-red:hover {
 .malzerei-untrennbar-text .text-wrapper .wp-block-column:nth-child(2) {
   padding-right: 10%;
 }
+.separator-malzerei-header {
+  top: -150px;
+}
+.separator-untrennbar-bottom {
+  top: 20px;
+  z-index: 99;
+}
 .malzherstellung-wrapper {
   background: url("/wp-content/uploads/images/malzherstellung_01.png");
-  background-size: contain;
+  background-size: cover;
 }
 .malzherstellung-wrapper .wp-block-column:nth-child(2) {
   background: rgba(191, 37, 49, 0.8);
   padding: 5% 5% 10% 5%;
+  margin-top: 50px;
+  position: relative;
 }
 .malzerei-text-image-title {
+  margin-top: 80px;
+  margin-bottom: 45px;
   text-align: center;
 }
 .malzerei-text-image {
@@ -1114,10 +1143,10 @@ a.s-btn-red:hover {
 .counter {
   position: absolute;
   top: 30px;
-  background: url(/wp-content/uploads/images/counter_circle.png);
+  background: url(/wp-content/uploads/images/number_circle.png);
   background-size: contain;
   height: 70px;
-  width: 72px;
+  width: 70px;
 }
 .counter.left {
   left: 30px;
@@ -1685,7 +1714,10 @@ a.s-btn-red:hover {
   margin-right: 10px;
 }
 .header-text.biere {
-  top: 13%;
+  top: 8%;
+}
+.biere-text .wp-block-column {
+  position: relative;
 }
 .biere-text .title,
 .biere-text .subtitle {
@@ -1693,7 +1725,33 @@ a.s-btn-red:hover {
 }
 .biere-text .ptext {
   text-align: center;
-  padding: 0 10%;
+  padding: 0 20%;
+}
+.biere-text .arrow_unsere_biere {
+  background: url("/wp-content/uploads/images/arrows/arrow_unsere_biere.png");
+  position: absolute;
+  height: 190px;
+  width: 137px;
+  left: 13%;
+  bottom: -80%;
+}
+.arrow-biere {
+  background: url("/wp-content/uploads/images/arrows/arrow_biere.png");
+  width: 97px;
+  height: 115px;
+  position: absolute;
+  /* bottom: -53%; */
+  top: 16%;
+  right: 46%;
+}
+.separator-wrapper .separator-header-biere {
+  top: -150px;
+}
+.tlp-portfolio-thum tlp-item img {
+  max-width: 250px;
+  max-height: 250px;
+  width: 250px;
+  height: 250px;
 }
 .slow-brewing-zertifizierte-wrapper {
   background: url("/wp-content/uploads/images/slow_brewing_zertifizierte.png");
@@ -1864,7 +1922,8 @@ a.s-btn-red:hover {
   margin-bottom: 0px;
 }
 .tlp-portfolio-isotope {
-  margin-left: 20px;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 .tlp-portfolio .img-responsive {
   width: 100%;
