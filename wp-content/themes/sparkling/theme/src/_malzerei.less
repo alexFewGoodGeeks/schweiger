@@ -1,5 +1,24 @@
 @import "_variables";
 
+.header-text.malzerei {
+  top: 8%;
+}
+.arrow-malzerei-header {
+  background: url("/wp-content/uploads/images/arrows/arrow_malzerrei.png");
+  position: absolute;
+  top: 220px;
+  height: 115px;
+  width: 97px;
+  right: 48%;
+}
+.arrow_die_exkluzive {
+  background: url("/wp-content/uploads/images/arrows/arrow_die_exkluzive.png");
+  position: absolute;
+  width: 195px;
+  height: 151px;
+  right: 86%;
+  bottom: 3%;
+}
 .malzerei-untrennbar-text {
   .title{
     text-align: center;
@@ -17,17 +36,27 @@
   }
 }
 
-
+.separator-malzerei-header {
+  top: -150px;
+}
+.separator-untrennbar-bottom {
+  top: 20px;
+  z-index: 99;
+}
 .malzherstellung-wrapper {
   background: url("/wp-content/uploads/images/malzherstellung_01.png");
-  background-size: contain;
+  background-size: cover;
   .wp-block-column:nth-child(2) {
     background: rgba(191, 37, 49, 0.8);
     padding: 5% 5% 10% 5%;
+    margin-top: 50px;
+    position: relative;
   }
 }
 
 .malzerei-text-image-title {
+  margin-top: 80px;
+  margin-bottom: 45px;
  text-align: center;
 }
 .malzerei-text-image {
@@ -99,10 +128,10 @@
   position: absolute;
   top: 30px;
 
-  background: url(/wp-content/uploads/images/counter_circle.png);
+  background: url(/wp-content/uploads/images/number_circle.png);
   background-size: contain;
   height: 70px;
-  width: 72px;
+  width: 70px;
   &.left {
     left: 30px;
   }
