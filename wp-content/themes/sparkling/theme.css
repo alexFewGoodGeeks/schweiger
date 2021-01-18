@@ -121,16 +121,18 @@ body {
   position: relative;
 }
 .separator-top {
-  background: url("/wp-content/uploads/images/separator_top.png");
+  background: url("/wp-content/uploads/images/top_separator.png");
+  background-size: cover;
   position: absolute;
   width: 100%;
-  height: 137px;
+  height: 157px;
 }
 .separator-bottom {
-  background: url("/wp-content/uploads/images/separator_bottom.png");
+  background: url("/wp-content/uploads/images/bottom_separator.png");
+  background-size: cover;
   position: absolute;
   width: 100%;
-  height: 137px;
+  height: 157px;
 }
 .table > tbody > tr > td,
 .table > tbody > tr > th,
@@ -1180,6 +1182,7 @@ a.s-btn-red:hover {
 }
 .timeline-wrapper {
   position: relative;
+  background: url("/wp-content/uploads/images/historie_background.png") #E5E5E5;
 }
 .timeline-wrapper .row {
   display: flex;
