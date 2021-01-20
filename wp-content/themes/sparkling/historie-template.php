@@ -36,6 +36,7 @@ get_header(); ?>
                             <div class="timeline-image ">
                                 <img src="/wp-content/uploads/images/timeline/Ludwig-Schweiger_1.png" />
                             </div>
+                            <div class="arrow-historie arrow-historie-bottom-right arrow-historie-1869"></div>
                         </div>
                     </div>
                 </div>
@@ -46,6 +47,7 @@ get_header(); ?>
                             <div class="timeline-text">
                                 <p>Gründung des landwirtschaftlichen Lagerhauses durch Ludwig Schweiger</p>
                             </div>
+                            <div class="arrow-historie arrow-historie-bottom-left arrow-historie-1919"></div>
                         </div>
                     </div>
                     <div class="col-md-2">
@@ -73,6 +75,7 @@ get_header(); ?>
                                 <p>Kauf einer gebrauchten Sudpfanne
                                     der Brauerei Brenner mit 116 Liter Fassungsvermögen</p>
                             </div>
+                            <div class="arrow-historie arrow-historie-top-right arrow-historie-1934"></div>
                         </div>
                     </div>
                 </div>
@@ -87,6 +90,7 @@ get_header(); ?>
                                 <p>Bau einer neuen Brauerei, Pfanneninhalt 28,5 Hektoliter</p>
                                 <p>Erster Brunnen – 11 Meter Tiefe</p>
                             </div>
+                            <div class="arrow-historie arrow-historie-bottom-left arrow-historie-1935"></div>
                         </div>
                     </div>
                     <div class="col-md-2">
@@ -122,6 +126,7 @@ get_header(); ?>
                                 <p>Entstehung der eigenen Limonadenanlagen, Fabrikat: “Winterwerb & Streng”</p>
                             </div>
                         </div>
+                        <div class="arrow-historie arrow-historie-top-right arrow-historie-1949"></div>
                     </div>
                 </div>
 
@@ -135,6 +140,7 @@ get_header(); ?>
                                 <p>Bau der eigenen
                                     Mälzerei</p>
                             </div>
+                            <div class="arrow-historie arrow-historie-bottom-left arrow-historie-1963"></div>
                         </div>
                     </div>
                     <div class="col-md-2">
@@ -166,6 +172,7 @@ get_header(); ?>
                             <div class="timeline-image ">
                                 <img src="/wp-content/uploads/images/timeline/Weisse_1.png" />
                             </div>
+                            <div class="arrow-historie arrow-historie-top-right arrow-historie-1973"></div>
                         </div>
                     </div>
                 </div>
@@ -176,6 +183,7 @@ get_header(); ?>
                             <div class="timeline-text">
                                 <p>Tiefbrunnenbohrung – aus dem etwa 150 Meter tiefen Bohrloch sprudelt quellfrisches Wasser – die “SILENCA Quelle”</p>
                             </div>
+                            <div class="arrow-historie arrow-historie-top-left arrow-historie-1989"></div>
                         </div>
                     </div>
                     <div class="col-md-2">
@@ -202,6 +210,7 @@ get_header(); ?>
                             <div class="timeline-text">
                                 <p>Der “SILENCA Quelle” wird staatlich anerkannte Mineralwasserqualität bestätigt</p>
                             </div>
+                            <div class="arrow-historie arrow-historie-bottom-right arrow-historie-1993"></div>
                         </div>
                     </div>
                 </div>
@@ -215,6 +224,7 @@ get_header(); ?>
                             <div class="timeline-text">
                                 <p>Die Brauerei Schweiger füllte ihre ersten SILENCA-Getränke ab</p>
                             </div>
+                            <div class="arrow-historie arrow-historie-bottom-left arrow-historie-1994"></div>
                         </div>
                     </div>
                     <div class="col-md-2">
@@ -244,6 +254,7 @@ get_header(); ?>
                             <div class="timeline-image ">
                                 <img src="/wp-content/uploads/images/timeline/Brauereifes_1.png" />
                             </div>
+                            <div class="arrow-historie arrow-historie-top-right arrow-historie-1998"></div>
                         </div>
                     </div>
                 </div>
@@ -257,6 +268,7 @@ get_header(); ?>
                             <div class="timeline-text">
                                 <p>Renovierung der Schweiger Brauereigaststätte “Schweiger Brauhaus”</p>
                             </div>
+                            <div class="arrow-historie arrow-historie-top-left arrow-historie-2003"></div>
                         </div>
                     </div>
                     <div class="col-md-2">
@@ -286,6 +298,7 @@ get_header(); ?>
                             <div class="timeline-image ">
                                 <img src="/wp-content/uploads/images/timeline/PET_1.png" />
                             </div>
+                            <div class="arrow-historie arrow-historie-bottom-right arrow-historie-2008"></div>
                         </div>
                     </div>
                 </div>
@@ -299,6 +312,7 @@ get_header(); ?>
                             <div class="timeline-text">
                                 <p>Slow Brewing Zertifizierung</p>
                             </div>
+                            <div class="arrow-historie arrow-historie-bottom-left arrow-historie-2013"></div>
                         </div>
                     </div>
                     <div class="col-md-2">
@@ -325,6 +339,7 @@ get_header(); ?>
                             <div class="timeline-text">
                                 <p>Produkteinführung 1516 Bayrisch Hell</p>
                             </div>
+                            <div class="arrow-historie arrow-historie-top-right arrow-historie-2016"></div>
                         </div>
                     </div>
                 </div>
@@ -338,6 +353,7 @@ get_header(); ?>
                             <div class="timeline-text">
                                <p>Produkteinführung Schweiger Weiße</p>
                             </div>
+                            <div class="arrow-historie arrow-historie-top-left arrow-historie-2018"></div>
                         </div>
                     </div>
                     <div class="col-md-2">

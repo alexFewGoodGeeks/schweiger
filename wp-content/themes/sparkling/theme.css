@@ -1168,7 +1168,104 @@ a.s-btn-red:hover {
   color: #DC052C;
 }
 .header-text.historie {
-  top: 3% ;
+  top: 6% ;
+}
+.separator-historie-header {
+  top: -170px;
+}
+.arrow-die-historie {
+  background: url("/wp-content/uploads/images/arrows/arrow_die_historie.png");
+  position: absolute;
+  width: 97px;
+  height: 117px;
+  top: 12%;
+  right: 46%;
+}
+.arrow-historie {
+  position: absolute;
+}
+.arrow-historie-bottom-right {
+  width: 140px;
+  height: 99px;
+  background: url("/wp-content/uploads/images/arrows/arrow_bottom_right.png");
+}
+.arrow-historie-bottom-left {
+  background: url("/wp-content/uploads/images/arrows/arrow_bottom_left.png");
+  width: 127px;
+  height: 63px;
+}
+.arrow-historie-top-left {
+  background: url("/wp-content/uploads/images/arrows/arrow_top_left.png");
+  width: 131px;
+  height: 71px;
+}
+.arrow-historie-top-right {
+  background: url("/wp-content/uploads/images/arrows/arrow_top_right.png");
+  width: 127px;
+  height: 63px;
+}
+.arrow-historie-1869 {
+  bottom: 30px;
+}
+.arrow-historie-1919 {
+  right: 10px;
+  bottom: -50px;
+}
+.arrow-historie-1934 {
+  top: 0;
+}
+.arrow-historie-1935 {
+  bottom: 20%;
+  left: 34%;
+}
+.arrow-historie-1949 {
+  top: 0;
+  right: 37%;
+  transform: rotate(23deg);
+}
+.arrow-historie-1963 {
+  right: 30%;
+  bottom: 33%;
+}
+.arrow-historie-1973 {
+  top: 20%;
+  transform: rotate(23deg);
+}
+.arrow-historie-1989 {
+  top: -50px;
+  right: 15px;
+}
+.arrow-historie-1993 {
+  left: 5%;
+  top: 50%;
+}
+.arrow-historie-1994 {
+  bottom: 2%;
+  transform: rotate(20deg);
+  left: 35%;
+}
+.arrow-historie-1998 {
+  top: 4%;
+  left: 40%;
+  transform: rotate(20deg);
+}
+.arrow-historie-2003 {
+  top: 10%;
+  transform: rotate(-15deg);
+}
+.arrow-historie-2008 {
+  bottom: 10%;
+}
+.arrow-historie-2013 {
+  bottom: 14%;
+  right: 26%;
+  transform: rotate(-10deg);
+}
+.arrow-historie-2016 {
+  top: 0;
+}
+.arrow-historie-2018 {
+  top: 0;
 }
 .historie-text .title,
 .historie-text .subtitle {
@@ -1182,7 +1279,7 @@ a.s-btn-red:hover {
 }
 .timeline-wrapper {
   position: relative;
-  background: url("/wp-content/uploads/images/historie_background.png") #E5E5E5;
+  background: url("/wp-content/uploads/images/historie_background.png") #f8f8f8;
 }
 .timeline-wrapper .row {
   display: flex;
@@ -1383,7 +1480,7 @@ a.s-btn-red:hover {
   flex-basis: 0;
 }
 .row-1935 {
-  margin-top: -60px;
+  margin-top: -50px;
 }
 .row-1949 {
   margin-top: -80px;
@@ -1418,7 +1515,12 @@ a.s-btn-red:hover {
   }
 }
 .header-text.team {
-  top: 13% !important;
+  top: 6%;
+}
+.team-wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-bottom: 70px;
 }
 .team-text .title,
 .team-text .subtitle {
@@ -1426,10 +1528,37 @@ a.s-btn-red:hover {
 }
 .team-text .ptext {
   text-align: center;
-  padding: 0 10%;
+  padding: 0 23%;
+}
+.arrow_kontaktieren {
+  background: url("/wp-content/uploads/images/arrows/arrow_kontaktieren.png");
+  position: absolute;
+  width: 194px;
+  height: 151px;
+  left: 41%;
+  bottom: 5%;
+}
+.arrow-das-herz {
+  background: url("/wp-content/uploads/images/arrows/arrow_das_herz.png");
+  position: absolute;
+  width: 136px;
+  height: 189px;
+  right: 13%;
+  top: 19%;
+}
+.arrow-team {
+  background: url("/wp-content/uploads/images/arrows/arrow_team.png");
+  position: absolute;
+  width: 97px;
+  height: 110px;
+  right: 47%;
+  top: 11%;
 }
 .empty-gray {
   background: #E5E5E5;
+}
+.separator-team-header {
+  bottom: 0;
 }
 .textstyle h6 {
   font-family: 'Montserrat', sans-serif;
@@ -1561,11 +1690,12 @@ a.s-btn-red:hover {
   min-width: 100%;
 }
 #team-two .image-left {
-  min-width: 270px;
+  min-width: 265px;
+  min-height: 270px;
 }
 #team-two .image-right {
   min-height: 270px;
-  min-width: 270px;
+  min-width: 265px;
 }
 #team-two .middle {
   display: flex;
@@ -1697,6 +1827,9 @@ a.s-btn-red:hover {
 .team-contact .team-contact-content {
   background: rgba(191, 37, 49, 0.8);
   padding: 5% 0% 10% 5%;
+}
+.team-contact .team-contact-content .title {
+  padding-top: 70px;
 }
 .team-contact .team-contact-content .ptext {
   padding-right: 20%;
