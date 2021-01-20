@@ -2147,6 +2147,9 @@ a.s-btn-red:hover {
   max-height: 850px !important;
   filter: brightness(90%);
 }
+.flexslider .flex-direction-nav {
+  display: none;
+}
 .flexslider .flex-control-nav {
   position: absolute;
   bottom: 15% !important;
