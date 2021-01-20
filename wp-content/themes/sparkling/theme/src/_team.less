@@ -1,20 +1,51 @@
 @import "_variables";
 
 .header-text.team {
-  top: 13% !important;
+  top: 6%;
 }
-
+.team-wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
 .team-text {
   .title, .subtitle {
     text-align: center;
   }
   .ptext {
     text-align: center;
-    padding: 0 10%;
+    padding: 0 23%;
   }
+}
+.arrow_kontaktieren {
+  background: url("/wp-content/uploads/images/arrows/arrow_kontaktieren.png");
+  position: absolute;
+  width: 194px;
+  height: 151px;
+  left: 41%;
+  bottom: 5%;
+}
+.arrow-das-herz {
+  background: url("/wp-content/uploads/images/arrows/arrow_das_herz.png");
+  position: absolute;
+  width: 136px;
+  height: 189px;
+  right: 13%;
+  top: 19%;
+}
+.arrow-team {
+  background: url("/wp-content/uploads/images/arrows/arrow_team.png");
+  position: absolute;
+  width: 97px;
+  height: 110px;
+  right: 47%;
+  top: 11%;
 }
 .empty-gray {
   background: @color-gray-primary;
+}
+.separator-team-header {
+  bottom: 0;
 }
 .textstyle {
   h6 {
@@ -39,7 +70,9 @@
     color: #FFFFFF;
   }
 }
-
+//.team {
+//  margin-bottom: 70px;
+//}
 #team-one {
   width: 100%;
   border-collapse: separate;
@@ -160,11 +193,12 @@
     min-width: 100%;
   }
   .image-left {
-    min-width: 270px;
+    min-width: 265px;
+    min-height: 270px;
   }
   .image-right {
     min-height: 270px;
-    min-width: 270px;
+    min-width: 265px;
   }
   .middle {
 
@@ -262,6 +296,9 @@
   .team-contact-content {
     background: rgba(191, 37, 49, 0.8);
     padding: 5% 0% 10% 5%;
+    .title {
+      padding-top: 70px;
+    }
     .ptext {
       padding-right: 20%;
     }
