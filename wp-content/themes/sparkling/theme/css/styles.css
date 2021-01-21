@@ -1889,13 +1889,37 @@ a.s-btn-red:hover {
   width: 250px;
   height: 250px;
 }
+.header-text.slow-brewing {
+  top: 2%;
+}
+.arrow-slow-brewing {
+  background: url("/wp-content/uploads/images/arrows/arrow_slow_brewing.png");
+  position: absolute;
+  width: 97px;
+  height: 115px;
+  right: 46%;
+  top: 7%;
+}
+.guetesiegel-header {
+  position: absolute;
+  right: 2%;
+  top: 6%;
+}
+.guetesiegel-header img {
+  max-width: 230px;
+  max-height: 230px;
+}
+.separator-slow-brewing-header {
+  bottom: -70%;
+}
 .slow-brewing-zertifizierte-wrapper {
   background: url("/wp-content/uploads/images/slow_brewing_zertifizierte.png");
   background-size: cover;
+  margin-bottom: 10%;
 }
 .slow-brewing-zertifizierte-wrapper .wp-block-column:nth-child(1) {
   background: rgba(191, 37, 49, 0.8);
-  padding: 5% 5% 10% 5%;
+  padding: 10%;
 }
 .slow-brewing-zertifizierte-wrapper .wp-block-column:nth-child(2) {
   position: relative;
@@ -1903,14 +1927,33 @@ a.s-btn-red:hover {
 .slow-brewing-zertifizierte-wrapper .wp-block-column:nth-child(2) .wp-block-image {
   position: absolute;
   bottom: 5%;
-  right: 5%;
+  right: 10%;
 }
 .slow-brewing-zertifizierte-wrapper .wp-block-column:nth-child(2) .wp-block-image img {
-  max-width: 80%;
+  max-width: 310px;
+}
+.slow-brewing-zertifizierte-wrapper .arrow_zertifizierte {
+  position: absolute;
+  background: url("/wp-content/uploads/images/arrows/arrow_zertifizierte.png");
+  width: 215px;
+  height: 204px;
+  right: 30%;
+  top: 36%;
+}
+.langsamkeit .wp-block-column:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.langsamkeit .wp-block-column:first-child .title,
+.langsamkeit .wp-block-column:first-child .subtitle,
+.langsamkeit .wp-block-column:first-child .ptext {
+  width: 530px;
 }
 .slow-brewing-text-image-title .slow-brewing-title {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1920,10 +1963,23 @@ a.s-btn-red:hover {
   color: #000;
 }
 .slow-brewing-text-image-title .slow-brewing-title-red {
+  display: flex;
+  position: relative;
+  align-items: inherit;
   color: #DC052C;
   font-family: 'Roboto Slab', serif;
   font-size: 48px;
   font-weight: 500;
+  text-transform: none;
+}
+.slow-brewing-text-image-title .slow-brewing-title-red .title-number {
+  background: url(/wp-content/uploads/images/number_circle.png);
+  height: 85px;
+  width: 85px;
+  margin: 0 8px -18px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .slow-brewing-image-title {
   margin: 0;
@@ -1965,12 +2021,20 @@ a.s-btn-red:hover {
 }
 .slow-brewing-video .ptext {
   text-align: center;
-  padding: 0 10%;
+  padding: 0 20%;
   margin-bottom: 50px;
 }
 .slow-brewing-video .video {
   width: 80%;
   margin: auto;
+}
+.slow-brewing-video .arrow_slow_brewing_das_gutesiegel {
+  background: url("/wp-content/uploads/images/arrows/arrow_slow_brewing_das_gutesiegel.png");
+  width: 93px;
+  height: 175px;
+  position: absolute;
+  right: 14%;
+  bottom: 13%;
 }
 .header-text.heandler-finden {
   top: 8%;
