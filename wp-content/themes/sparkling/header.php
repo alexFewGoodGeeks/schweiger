@@ -35,8 +35,45 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && ( strpos( $_SERVER['HTTP_USER_AGENT
 <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 <div id="page" class="hfeed site">
 
+    <div id="responsive-navigation" class="hide-nav">
+        <div class="responsive-navigation-wrapper">
+            <div class="close-nav"><span id="close-nav-btn">X</span></div>
+            <div class="menu-wrapper">
+                <?php sparkling_left_menu(); ?>
+                <?php sparkling_right_menu(); ?>
+            </div>
+        </div>
+    </div>
+
+
 	<header id="masthead" class="site-header header-d" role="banner">
-		<nav class="navbar navbar-default
+
+        <nav class="navbar navbar-default mobile-nav" role="navigation">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="navbar-header">
+                        <button type="button" id="responsive-nav-button" class="btn navbar-toggle" >
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="logo-wrapper">
+                        <a href="/">
+                            <img src="/wp-content/uploads/images/header_logo.png" class="header-logo" alt=""/>
+                        </a>
+                    </div>
+                    <div class="languages">
+                        <div class="flag-wrapper">
+                            <img src="/wp-content/uploads/images/flag_de.png" class="flag" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+		<nav class="navbar navbar-default desktop-nav
 		<?php
 		if ( of_get_option( 'sticky_header' ) ) {
 			echo 'navbar-fixed-top';}

@@ -91,5 +91,34 @@
 
 <?php wp_footer(); ?>
 
+<script>
+    jQuery(function() {
+        jQuery("#responsive-nav-button").click(function() {
+            var responsiveNavigation = jQuery("#responsive-navigation");
+            var isHidden = responsiveNavigation.hasClass("hide-nav");
+            var content = jQuery("#content");
+            if (isHidden) {
+                responsiveNavigation
+                    .removeClass("hide-nav")
+                    .addClass("show-nav")
+                content.addClass('responsive-active');
+
+            } else {
+                responsiveNavigation
+                    .removeClass("show-nav")
+                    .addClass("hide-nav")
+            }
+
+       });
+
+        jQuery("#close-nav-btn").click(function() {
+            jQuery("#responsive-navigation")
+                .removeClass('show-nav')
+                .addClass('hide-nav')
+
+            jQuery("#content").removeClass('responsive-active');
+        });
+    });
+</script>
 </body>
 </html>
