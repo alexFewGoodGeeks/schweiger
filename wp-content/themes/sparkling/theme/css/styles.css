@@ -1926,6 +1926,9 @@ responsive
     font-size: 32px;
     line-height: 30px;
   }
+  .timeline-wrapper .row {
+    max-width: 100%;
+  }
   .timeline-wrapper .col-md-5,
   .timeline-wrapper .col-md-2 {
     margin: 0;
