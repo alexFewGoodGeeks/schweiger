@@ -1220,7 +1220,7 @@ mobile nav
 }
 .malzherstellung-wrapper .wp-block-column:nth-child(2) {
   background: rgba(191, 37, 49, 0.8);
-  padding: 5% 5% 10% 5%;
+  padding: 5% 3% 10% 3%;
   margin-top: 50px;
   position: relative;
 }
@@ -1524,6 +1524,15 @@ mobile nav
   }
   .separator-top {
     background-size: contain;
+  }
+}
+@media (max-width: 375px) {
+  .separator-malzerei-header {
+    top: -90px;
+  }
+  .separator-untrennbar-bottom {
+    height: 42px;
+    top: 36px;
   }
 }
 .header-text.historie {

@@ -116,6 +116,8 @@ if ( ! class_exists( 'TLPportShortCode' ) ):
 						$mCol = 1;
 					}
 
+
+
 					$isIsotope  = preg_match( '/isotope/', $layout );
 					$isCarousel = preg_match( '/carousel/', $layout );
 					$isLayout   = preg_match( '/layout/', $layout );
@@ -192,7 +194,7 @@ if ( ! class_exists( 'TLPportShortCode' ) ):
 						$dCol = $tCol = $mCol = 12;
 					}
 
-					$arg['grid'] = sprintf( 'tlp-col-lg-%d tlp-col-md-%d tlp-col-sm-%d tlp-col-xs-12 tlp-single-item%s%s%s%s', $dCol, $tCol, $mCol,
+					$arg['grid'] = sprintf( 'tlp-col-lg-%d tlp-col-md-%d tlp-col-sm-%d tlp-col-xs-6 tlp-single-item%s%s%s%s', $dCol, $tCol, $mCol,
 						$isIsotope ? ' tlp-isotope-item' : null,
 						$isCarousel ? ' tlp-carousel-item' : null,
 						$isLayout ? ' tlp-grid-item' : null,
