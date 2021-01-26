@@ -941,6 +941,50 @@ mobile nav
 .homepage-fuhrung .homepage-fuhrung-images .fuhrung-img-1 {
   right: 0;
 }
+@media (max-width: 1400px) {
+  .separator-homepage-top {
+    background-size: contain;
+  }
+  .separator-quotes {
+    background-size: contain;
+    height: 131px;
+  }
+  .separator-top-zertifiret {
+    background-size: contain;
+    height: 131px;
+  }
+  .separator-bottom-zertifizerit {
+    background-size: contain;
+  }
+}
+@media (max-width: 1200px) {
+  .separator-homepage-top {
+    height: 116px;
+  }
+  .start-welcome .arrow-willkommen {
+    bottom: -7%;
+    right: -30%;
+  }
+  .separator-quotes {
+    background-size: cover;
+    height: 108px;
+  }
+  .separator-top-zertifiret {
+    background-size: cover;
+    height: 108px;
+  }
+  .start-zertifiziert .wp-block-column:first-child .wp-block-image img {
+    max-width: 60%;
+  }
+  .start-zertifiziert .wp-block-column:first-child .wp-block-image {
+    top: 70%;
+    right: -5%;
+  }
+  .start-zertifiziert .arrow-zertifiziert {
+    right: 31%;
+    bottom: -10%;
+  }
+}
 .single-image-wrapper img {
   width: 100% !important;
 }
@@ -2521,6 +2565,38 @@ responsive
   content: url("/wp-content/uploads/images/letter_icon.png");
   margin-right: 10px;
 }
+@media (max-width: 1400px) {
+  .header-text.team {
+    top: 4%;
+  }
+  .separator-team-header {
+    background-size: contain;
+  }
+  .arrow-team {
+    height: 116px;
+    right: 45%;
+    top: 8%;
+  }
+  .separator-team-contact {
+    background-size: contain;
+    height: 131px;
+  }
+  .arrow-das-herz {
+    top: 16%;
+    right: 9%;
+  }
+}
+@media (max-width: 1200px) {
+  .separator-team-contact {
+    background-size: cover;
+    height: 109px;
+    top: 5px;
+  }
+  .arrow-das-herz {
+    top: 17%;
+    right: 0%;
+  }
+}
 .header-text.biere {
   top: 8%;
 }
@@ -2560,6 +2636,18 @@ responsive
   max-height: 250px;
   width: 250px;
   height: 250px;
+}
+@media (max-width: 1400px) {
+  .header-text.biere {
+    top: 6%;
+  }
+  .separator-header-biere {
+    background-size: contain;
+  }
+  .arrow-biere {
+    top: 13%;
+    right: 46%;
+  }
 }
 .header-text.slow-brewing {
   top: 2%;
@@ -2707,6 +2795,50 @@ responsive
   position: absolute;
   right: 14%;
   bottom: 13%;
+}
+@media (max-width: 1400px) {
+  .separator-slow-brewing-header {
+    background-size: contain;
+  }
+  .arrow-slow-brewing {
+    top: 6%;
+    right: 45%;
+  }
+  .guetesiegel-header {
+    top: 5%;
+  }
+  .guetesiegel-header img {
+    max-width: 185px;
+    max-height: 185px;
+  }
+  .separator-zertifizierte {
+    background-size: contain;
+    height: 131px;
+  }
+}
+@media (max-width: 1200px) {
+  .header-text.slow-brewing {
+    top: 1%;
+  }
+  .separator-zertifizierte {
+    background-size: cover;
+    height: 108px;
+    top: 5px;
+  }
+  .langsamkeit .wp-block-column:first-child .title,
+  .langsamkeit .wp-block-column:first-child .subtitle,
+  .langsamkeit .wp-block-column:first-child .ptext {
+    width: 420px;
+  }
+  .slow-brewing-image-title .counter {
+    height: 47px;
+    width: 48px;
+    top: 5px;
+  }
+  .slow-brewing-image-title .counter .number {
+    font-size: 32px;
+    line-height: 44px;
+  }
 }
 .header-text.heandler-finden {
   top: 8%;
@@ -2953,6 +3085,25 @@ responsive
   height: 70px;
   width: 70px;
 }
+@media (max-width: 1400px) {
+  .separator-erleben-header {
+    background-size: contain;
+  }
+  .header-text.erleben {
+    top: 5%;
+  }
+  .arrow_schweiger_erleben {
+    top: 10%;
+  }
+}
+@media (max-width: 1200px) {
+  .header-text.erleben {
+    top: 4%;
+  }
+  .arrow_schweiger_erleben {
+    top: 8%;
+  }
+}
 .flexslider .slides li img {
   height: 110vh;
   max-height: 850px !important;
@@ -3033,4 +3184,28 @@ responsive
 }
 .store-locator #wpsl-stores li .wpsl-direction-wrap a {
   color: #E5E5E5;
+}
+@media (max-width: 1400px) {
+  .separator-handler-finden-header {
+    background-size: contain;
+  }
+  .arrow_handler {
+    top: 18%;
+  }
+  .arrow_beste_auswahl {
+    top: 36%;
+    left: 9%;
+  }
+  .arrow_lieblingsbiere {
+    bottom: 20%;
+  }
+}
+@media (max-width: 1200px) {
+  .header-text.heandler-finden {
+    top: 8%;
+  }
+  .arrow_beste_auswahl {
+    top: 33%;
+    left: 5%;
+  }
 }
