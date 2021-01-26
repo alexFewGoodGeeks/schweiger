@@ -1319,6 +1319,14 @@ mobile nav
   height: 70px;
   width: 70px;
 }
+@media (max-width: 992px) {
+  .counter {
+    background: url(/wp-content/uploads/images/number_circle_white.png);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+  }
+}
 .counter.left {
   left: 30px;
 }
@@ -1335,6 +1343,13 @@ mobile nav
   text-align: center;
   /* cd/red */
   color: #DC052C;
+}
+@media (max-width: 992px) {
+  .counter .number {
+    color: #fff;
+    line-height: 48px;
+    font-size: 38px;
+  }
 }
 @media (max-width: 1400px) {
   .single-featured {
@@ -3011,7 +3026,7 @@ responsive
   text-align: center;
 }
 .header-text.erleben {
-  top: 6%;
+  top: 4%;
 }
 .arrow_schweiger_erleben {
   position: absolute;
@@ -3019,7 +3034,7 @@ responsive
   width: 97px;
   height: 115px;
   right: 46%;
-  top: 11%;
+  top: 8%;
 }
 .separator-erleben-header {
   top: -140px;
@@ -3093,18 +3108,18 @@ responsive
     background-size: contain;
   }
   .header-text.erleben {
-    top: 5%;
+    top: 3%;
   }
   .arrow_schweiger_erleben {
-    top: 10%;
+    top: 6%;
   }
 }
 @media (max-width: 1200px) {
   .header-text.erleben {
-    top: 4%;
+    top: 3%;
   }
   .arrow_schweiger_erleben {
-    top: 8%;
+    top: 6%;
   }
 }
 .flexslider .slides li img {
