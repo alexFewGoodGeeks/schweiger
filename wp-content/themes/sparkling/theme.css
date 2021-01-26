@@ -984,6 +984,9 @@ mobile nav
     right: 31%;
     bottom: -10%;
   }
+  .test-clas {
+    margin: 0;
+  }
 }
 .single-image-wrapper img {
   width: 100% !important;
