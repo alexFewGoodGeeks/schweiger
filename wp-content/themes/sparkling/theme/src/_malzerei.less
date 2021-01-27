@@ -129,6 +129,12 @@
   top: 30px;
 
   background: url(/wp-content/uploads/images/number_circle.png);
+  @media (max-width: 992px) {
+    background: url(/wp-content/uploads/images/number_circle_white.png);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+  }
   background-size: contain;
   height: 70px;
   width: 70px;
@@ -151,6 +157,11 @@
     /* cd/red */
 
     color: @color-red-primary;
+    @media (max-width: 992px) {
+      color: @color-white;
+      line-height: 48px;
+      font-size: 38px;
+    }
   }
 }
 
