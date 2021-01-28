@@ -3180,6 +3180,17 @@ responsive
   text-transform: uppercase;
   color: #DC052C;
 }
+@media (max-width: 576px) {
+  .images-square-wrapper .social-media-wrapper .social-media-text h3 {
+    font-size: 20px;
+    line-height: 18px;
+  }
+}
+@media (max-width: 320px) {
+  .images-square-wrapper .social-media-wrapper .social-media-text h3 {
+    font-size: 16px;
+  }
+}
 .images-square-wrapper .social-media-wrapper .social-media-text p {
   margin-bottom: 0;
   font-family: 'Montserrat', sans-serif;
@@ -3190,6 +3201,18 @@ responsive
   text-align: center;
   color: #000000;
 }
+@media (max-width: 576px) {
+  .images-square-wrapper .social-media-wrapper .social-media-text p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .images-square-wrapper .social-media-wrapper .social-media-text p {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
 .images-square-wrapper .social-media-wrapper .social-media-links ul {
   list-style: none;
   display: flex;
@@ -3199,28 +3222,73 @@ responsive
   margin-top: 20px;
   justify-content: space-between;
 }
+@media (max-width: 400px) {
+  .images-square-wrapper .social-media-wrapper .social-media-links ul {
+    margin-top: 5px;
+  }
+}
 .images-square-wrapper .social-media-wrapper .social-media-links ul .icon {
   width: 70px;
   height: 70px;
 }
+@media (max-width: 1200px) {
+  .images-square-wrapper .social-media-wrapper .social-media-links ul .icon {
+    height: 40px;
+    width: 40px;
+  }
+}
+@media (max-width: 400px) {
+  .images-square-wrapper .social-media-wrapper .social-media-links ul .icon {
+    height: 30px;
+    width: 30px;
+  }
+}
 .images-square-wrapper .social-media-wrapper .social-media-links ul .fb-icon:before {
-  content: url("/wp-content/uploads/images/fb_icon.png");
+  content: "";
+  background-image: url("/wp-content/uploads/images/fb_icon.png");
   height: 70px;
   width: 70px;
+  display: block;
+}
+@media (max-width: 1200px) {
+  .images-square-wrapper .social-media-wrapper .social-media-links ul .fb-icon:before {
+    height: 40px;
+    width: 40px;
+    background-size: contain;
+  }
 }
 .images-square-wrapper .social-media-wrapper .social-media-links ul .ig-icon:before {
-  content: url("/wp-content/uploads/images/ig_icon.png");
+  content: "";
+  background-image: url("/wp-content/uploads/images/ig_icon.png");
   height: 70px;
   width: 70px;
+  display: block;
+}
+@media (max-width: 1200px) {
+  .images-square-wrapper .social-media-wrapper .social-media-links ul .ig-icon:before {
+    height: 40px;
+    width: 40px;
+    background-size: contain;
+  }
 }
 .images-square-wrapper .social-media-wrapper .social-media-links ul .yt-icon:before {
-  content: url("/wp-content/uploads/images/yt_icon.png");
+  content: "";
+  background-image: url("/wp-content/uploads/images/yt_icon.png");
   height: 70px;
   width: 70px;
+  display: block;
+}
+@media (max-width: 1200px) {
+  .images-square-wrapper .social-media-wrapper .social-media-links ul .yt-icon:before {
+    height: 40px;
+    width: 40px;
+    background-size: contain;
+  }
 }
 @media (max-width: 1400px) {
   .separator-erleben-header {
-    background-size: contain;
+    background-size: cover;
+    height: 126px;
   }
   .header-text.erleben {
     top: 3%;
@@ -3231,10 +3299,82 @@ responsive
 }
 @media (max-width: 1200px) {
   .header-text.erleben {
-    top: 3%;
+    top: 2%;
   }
   .arrow_schweiger_erleben {
-    top: 6%;
+    top: 5%;
+  }
+  .separator-erleben-header {
+    background-size: cover;
+    height: 100px;
+  }
+}
+@media (max-width: 992px) {
+  .header-text.erleben {
+    top: 1%;
+  }
+  .header-text.erleben .header-title {
+    font-size: 45px;
+    line-height: 59px;
+  }
+  .header-text.erleben .header-subtitle {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .separator-erleben-header {
+    background-size: contain;
+    top: -110px;
+  }
+  .arrow_schweiger_erleben {
+    top: 3%;
+    right: 42%;
+  }
+  .social-netowkrs {
+    flex-direction: column;
+  }
+  .social-netowkrs .wp-block-column:not(:first-child) {
+    margin-left: 0;
+  }
+  .title {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .subtitle {
+    font-size: 32px;
+    line-height: 30px;
+  }
+  .downloads-wrapper {
+    padding-bottom: 40px;
+  }
+  .downloads-wrapper .downloads-title {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 576px) {
+  .header-text.erleben {
+    top: 2%;
+  }
+  .arrow_schweiger_erleben {
+    width: 82px;
+    height: 82px;
+    background-size: contain;
+  }
+  .arrow_schweiger_erleben {
+    top: 4%;
+    right: 37%;
+  }
+  .separator-erleben-header {
+    background-size: cover;
+    top: -85px;
+    height: 40px;
+  }
+}
+@media (max-width: 375px) {
+  .header-text.erleben {
+    top: 100px;
+  }
+  .arrow_schweiger_erleben {
+    top: 370px;
   }
 }
 .flexslider .slides li img {
