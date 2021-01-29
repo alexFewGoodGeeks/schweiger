@@ -3058,6 +3058,85 @@ responsive
 .wpsl-select-wrap {
   margin-bottom: 0px;
 }
+@media (max-width: 992px) {
+  .wpsl-search #wpsl-search-wrap form {
+    display: flex;
+    align-items: flex-end;
+  }
+  .wpsl-search #wpsl-search-wrap .wpsl-input {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wpsl-search #wpsl-search-wrap .wpsl-input div {
+    margin-left: 0;
+  }
+  .wpsl-search #wpsl-search-wrap .wpsl-select-wrap #wpsl-radius,
+  .wpsl-search #wpsl-search-wrap .wpsl-select-wrap #wpsl-results {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wpsl-search #wpsl-search-wrap .wpsl-select-wrap #wpsl-radius div,
+  .wpsl-search #wpsl-search-wrap .wpsl-select-wrap #wpsl-results div {
+    margin-left: 0;
+  }
+}
+/** plugin style override **/
+@media (max-width: 825px) {
+  #wpsl-search-wrap .wpsl-input {
+    width: auto;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 675px) {
+  #wpsl-result-list {
+    padding: 10px;
+  }
+}
+@media (max-width: 660px) {
+  #wpsl-wrap .wpsl-search {
+    height: auto;
+  }
+  #wpsl-wrap .wpsl-search #wpsl-search-wrap form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #wpsl-wrap .wpsl-search #wpsl-search-wrap form div {
+    width: 97%;
+  }
+  #wpsl-wrap .wpsl-search #wpsl-search-wrap form div input,
+  #wpsl-wrap .wpsl-search #wpsl-search-wrap form div select {
+    width: 100%;
+  }
+  #wpsl-wrap .wpsl-search #wpsl-search-wrap form .wpsl-input > div {
+    justify-content: flex-start;
+  }
+  #wpsl-wrap .wpsl-search #wpsl-search-wrap form .wpsl-select-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 10px;
+  }
+  #wpsl-wrap .wpsl-search #wpsl-search-wrap form .wpsl-select-wrap #wpsl-radius,
+  #wpsl-wrap .wpsl-search #wpsl-search-wrap form .wpsl-select-wrap #wpsl-results {
+    margin-left: 0;
+    width: 100%;
+  }
+  #wpsl-wrap .wpsl-search #wpsl-search-wrap form .wpsl-search-btn-wrap {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 660px) and (max-width: 460px) {
+  #wpsl-wrap .wpsl-search #wpsl-search-wrap form {
+    margin-right: 5px;
+  }
+}
+@media (max-width: 570px) {
+  #wpsl-search-wrap .wpsl-dropdown {
+    width: 100%!important;
+  }
+  #wpsl-search-input {
+    width: 100%!important;
+  }
+}
 .tlp-portfolio-isotope {
   max-width: 1140px;
   margin: 0 auto;
@@ -3480,5 +3559,43 @@ responsive
   .arrow_beste_auswahl {
     top: 33%;
     left: 5%;
+  }
+}
+@media (max-width: 992px) {
+  .header-text.heandler-finden .header-title {
+    font-size: 45px;
+    line-height: 59px;
+  }
+  .header-text.heandler-finden .header-subtitle {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .heandler-finden-text .title {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .heandler-finden-text .subtitle {
+    font-size: 32px;
+    line-height: 30px;
+  }
+  .arrow_beste_auswahl {
+    top: 30%;
+  }
+  .heandler-finden-text .ptext {
+    padding: 0 15%;
+  }
+  .heandler-finder-shop-text .ptext {
+    padding: 0 15%;
+  }
+  .arrow_lieblingsbiere {
+    right: 0;
+  }
+  .separator-handler-finden-header {
+    background-size: cover;
+    height: 80px;
+    top: -120px;
+  }
+  .arrow_handler {
+    top: 16%;
   }
 }
