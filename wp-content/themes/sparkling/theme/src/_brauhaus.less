@@ -1,0 +1,65 @@
+@import "_variables";
+
+.header-text.brauhaus {
+  .header-text {
+    top: 170px;
+  }
+}
+.header-arrow-brauhaus {
+  right: 46%;
+  top: 410px;
+}
+.separator-header-brauhaus {
+  top: -120px;
+}
+.brauhaus-wrapper {
+  margin-top: 60px;
+  .title {
+    text-align: center;
+  }
+  .wp-block-column {
+    .wp-block-columns:nth-child(2),
+    .wp-block-columns:nth-child(3) {
+      display: flex;
+      margin: 0;
+      .wp-block-column {
+        margin: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        .box-title, .ptext {
+          padding: 0 20px;
+        }
+        figure {
+          margin: 0;
+          padding: 0;
+        }
+        img {
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1400px) {
+  .header-text.brauhaus {
+    .header-text {
+      top: 150px;
+    }
+  }
+  .separator-header-brauhaus {
+    background-size: cover;
+    top: -100px;
+    height: 100px;
+  }
+  .header-arrow-brauhaus {
+    right: 46%;
+    top: 330px;
+  }
+  .separator-header-brauhaus {
+    top: -120px;
+  }
+}
