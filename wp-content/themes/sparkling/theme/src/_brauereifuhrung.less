@@ -1,0 +1,92 @@
+@import "_variables";
+
+.header-text.brauereifuehrung {
+  top: 8%;
+}
+.brauereifuehrung-text {
+  .wp-block-column {
+    position: relative;
+  }
+  .title, .subtitle {
+    text-align: center;
+  }
+  .ptext {
+    text-align: center;
+    padding: 0 15%;
+  }
+}
+.arrow-brauereifuehrung{
+  background: url("/wp-content/uploads/images/arrows/header_arrow.png");
+  width: 97px;
+  height: 115px;
+  position: absolute;
+  top: 16%;
+  right: 46%;
+}
+.separator-wrapper {
+  .separator-header-brauereifuehrung {
+    top: -150px;
+  }
+}
+.brauereifuehrung-image {
+  .wp-block-columns {
+    margin:0px;
+    padding:0px;
+    flex-wrap: wrap;
+    &:first-child {
+      box-shadow: 0px -15px 27px -25px grey;
+    }
+    &:last-child {
+      box-shadow: 0 15px 27px -25px grey;
+    }
+  }
+  .wp-block-column {
+    position: relative;
+    margin:0px;
+    padding:0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .wp-block-image {
+      margin: 0px;
+      padding: 0px;
+    }
+    p {
+      text-align: center;
+      width: 85%;
+      &.box-text {
+        margin-bottom:30px;
+      }
+    }
+  }
+}
+.bottom-links{
+  text-align: center;
+  padding:20px 5%;
+  .wp-block-column:nth-child(2){
+    flex:0.2;
+  }
+  .wp-block-column:nth-child(3){
+    font-size:16px;
+    font-weight:bold;
+  }
+}
+.wp-block-image, .wp-block-image img{
+  width:100%;
+}
+@media (max-width: 1400px) {
+  .header-text.brauereifuehrung {
+    top: 6%
+  }
+  .separator-header-brauereifuehrung {
+    background-size: contain;
+  }
+  .arrow-brauereifuehrung {
+    top: 13%;
+    right: 46%;
+  }
+}
+
+@media (max-width: 1200px) {
+}
