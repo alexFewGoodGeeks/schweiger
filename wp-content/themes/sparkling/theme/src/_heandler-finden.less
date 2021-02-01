@@ -90,3 +90,94 @@
 #wpsl-category, .wpsl-input, .wpsl-select-wrap {
   margin-bottom: 0px;
 }
+
+@media (max-width: 992px) {
+  .wpsl-search  {
+    #wpsl-search-wrap {
+      form {
+        display: flex;
+        align-items: flex-end;
+      }
+      .wpsl-input {
+        flex-direction: column;
+        align-items: flex-start;
+        div {
+          margin-left: 0;
+        }
+      }
+      .wpsl-select-wrap {
+        #wpsl-radius,
+        #wpsl-results {
+          flex-direction: column;
+          align-items: flex-start;
+          div {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/** plugin style override **/
+@media (max-width: 825px) {
+  #wpsl-search-wrap .wpsl-input {
+    width: auto;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 675px) {
+  #wpsl-result-list {
+    padding: 10px;
+  }
+}
+@media (max-width: 660px) {
+  #wpsl-wrap {
+    .wpsl-search {
+      height: auto;
+      #wpsl-search-wrap {
+        form {
+          @media (max-width: 460px) {
+            margin-right: 5px;
+          }
+          flex-direction: column;
+          align-items: flex-start;
+          div {
+            width: 97%;
+            input, select {
+              width: 100%;
+            }
+          }
+          .wpsl-input {
+            >div {
+              justify-content: flex-start;
+            }
+          }
+          .wpsl-select-wrap {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-right: 10px;
+            #wpsl-radius, #wpsl-results {
+              margin-left: 0;
+              width: 100%;
+            }
+          }
+          .wpsl-search-btn-wrap {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  #wpsl-search-wrap .wpsl-dropdown {
+    width: 100%!important;
+  }
+  #wpsl-search-input {
+    width: 100%!important;
+  }
+}
+
+

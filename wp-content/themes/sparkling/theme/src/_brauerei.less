@@ -1,0 +1,164 @@
+@import "_variables";
+
+@tableBorder: #00FFFF;
+.header-text.braueri {
+  .header-text {
+    top: 70px;
+  }
+}
+
+.brauerei-header-separator {
+  top: -170px;
+}
+
+.header-arrow-brauerei {
+  top: 255px;
+  right: 47%;
+}
+
+.die-brauerei-wrapper {
+  max-width: @contentMaxWidth;
+  margin: 0 auto;
+  .title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  img {
+    max-height: 500px;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+.pholosophie-wrapper {
+  margin-top: 100px;
+  .philosophie-header {
+    text-align: center;
+    max-width: @contentMaxWidth;
+    margin: 0 auto;
+    .title {
+      margin-bottom: 40px;
+    }
+
+  }
+  .philosophie-content {
+    text-align: center;
+    margin-top:20px;
+    padding: 20px;
+    background-color: @color-gray-primary;
+    .phwrap {
+      padding-bottom: 20px;
+      max-width: 992px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.awards-wrapper {
+  .awards-title {
+    text-align: center;
+    margin-top: 100px;
+  }
+  .awards-content {
+    display: flex;
+    background-color: @color-gray-primary;
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      figure {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.awards-table {
+  width: 992px;
+  margin: 0 auto;
+}
+
+.table-awards {
+
+  width: 992px;
+  margin: 0 auto;
+  tr:nth-child(even) {
+    background-color: @color-gray-primary;
+  }
+  tr, td {
+    //border :1px solid blue;
+  }
+  .separator {
+    position: relative;
+    width: 90%;
+    &:before {
+      display: inline-block;
+      content: "";
+      border-top: 1px solid @color-red-primary;
+      width: 100%;
+    }
+  }
+  span {
+    display: block;
+    margin: 10px 0;
+    font-family: @font-family-roboto-montserrat;
+    font-weight: normal;
+    color: @color-black;
+  }
+  td {
+    padding: 10px;
+  }
+  .award-year {
+    width: 10%;
+    border: 1px solid @tableBorder;
+    span {
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+  .award-title {
+    border: 1px solid @tableBorder;
+    width: 35%;
+    padding: 0 20px;
+  }
+  .award-items {
+    border: 1px solid @tableBorder;
+    width: 35%;
+    padding: 0 20px;
+  }
+  .award-place {
+    width: 20%;
+    text-align: center;
+    padding: 0 20px;
+    border: 1px solid @tableBorder;
+  }
+}
+
+@media (max-width: 1400px) {
+  .header-text.braueri .header-text {
+    top: 30px;
+  }
+  .header-arrow-brauerei {
+    top: 170px;
+  }
+
+  .brauerei-header-separator {
+    background-size: contain;
+    top: -110px;
+  }
+}
+@media (max-width: 1200px) {
+  .header-text.braueri .header-text {
+    top: 0px;
+  }
+  .header-arrow-brauerei {
+    top: 155px;
+    right: 47%;
+  }
+  .brauerei-header-separator {
+    background-size: contain;
+    top: -100px;
+  }
+}

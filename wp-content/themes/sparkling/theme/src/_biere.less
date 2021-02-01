@@ -1,3 +1,5 @@
+@import "_variables";
+
 .header-text.biere {
   top: 8%;
 }
@@ -57,5 +59,134 @@
   .arrow-biere {
     top: 13%;
     right: 46%;
+  }
+  .biere-text .arrow_unsere_biere {
+    left: 10%;
+    bottom: -7%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header-text.biere {
+    top: 3%;
+  }
+
+  .arrow-biere {
+    top: 9%;
+  }
+  .biere-text .arrow_unsere_biere {
+    left: 3%;
+    bottom: 20%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .rt-container-fluid {
+    max-width: 840px;
+  }
+  .tlp-portfolio-container .tlp-single-item {
+    min-width: 280px;
+    max-width: 280px;
+    width: 280px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-text.biere {
+    .header-title {
+      .header-title-responsive();
+    }
+    .header-subtitle {
+      .header-subtitle-responsive();
+    }
+  }
+  .separator-wrapper .separator-header-biere {
+    top: -115px;
+  }
+  .arrow-biere {
+    top: 7%;
+    right: 43%;
+  }
+  .biere-text {
+    .title {
+      .title-responsive();
+    }
+    .subtitle {
+      .subtitle-responsive();
+    }
+  }
+  .select-filter {
+    width: 100%;
+    height: 48px;
+    background-color: #DC052C;
+    color: white;
+    border-radius: 50px;
+    font-family: @font-family-roboto-montserrat;
+    font-size: 16px;
+    line-height: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 30px;
+    outline: none;
+    appearance: none;
+    background-image: url("/wp-content/uploads/images/dropdown_arrow.png");
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+  }
+
+  .rt-container-fluid {
+    max-width: 560px;
+  }
+}
+
+@media (max-width: 768px) {
+  .biere-text {
+    padding: 20px;
+
+    .title,
+    .subtitle,
+    .ptext {
+      text-align: left;
+    }
+
+    .ptext {
+      padding: 0;
+    }
+    .arrow_unsere_biere {
+      transform: scaleX(-1) rotate(-2deg);
+      height: 100px;
+      width: 70px;
+      background-size: contain;
+      left: 82%;
+      bottom: 122%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .separator-wrapper .separator-header-biere {
+    top: -100px;
+    background-size: cover;
+  }
+  .arrow-biere {
+    width: 82px;
+    height: 82px;
+    background-size: contain;
+    top: 8%;
+    right: 41%;
+  }
+}
+
+@media (max-width: 576px) {
+
+}
+
+@media (max-width: 450px) {
+  .separator-wrapper .separator-header-biere {
+    background-size: contain;
+    top: -80px;
+  }
+  .arrow-biere {
+    top: 10%;
   }
 }
