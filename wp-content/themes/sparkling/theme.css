@@ -4393,7 +4393,8 @@ responsive
   padding: 5% 5%;
   max-width: 992px;
 }
-.brauwerkstatt-content-wrapper .wp-block-column .ptext {
+.brauwerkstatt-content-wrapper .wp-block-column .ptext,
+.brauwerkstatt-content-wrapper .wp-block-column p {
   text-align: center;
 }
 @media (max-width: 1400px) {
