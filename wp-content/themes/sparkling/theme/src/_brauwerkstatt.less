@@ -1,0 +1,61 @@
+@import "_variables";
+
+.brauwerkstatt-header-separator {
+  top: -120px;
+}
+
+.header-text.brauwerkstatt {
+  .header-text {
+    top: 140px;
+  }
+}
+
+.header-arrow-brauwerkstatt {
+  top: 345px;
+  right: 47%;
+}
+
+.brauwerkstatt-wrapper {
+  display: flex;
+  .wp-block-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .wp-block-image {
+      width: 100%;
+    }
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.brauwerkstatt-content-wrapper {
+  background-color: @color-gray-primary;
+  .wp-block-column {
+    margin: 0 auto;
+    padding: 5% 5%;
+    max-width: 992px;
+    .ptext {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .brauwerkstatt-header-separator {
+    background-size: cover;
+    height: 110px;
+  }
+  .header-text.brauwerkstatt {
+    .header-text {
+      top: 100px;
+    }
+  }
+
+  .header-arrow-brauwerkstatt {
+    top: 305px;
+  }
+}
