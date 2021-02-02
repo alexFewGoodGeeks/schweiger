@@ -1001,7 +1001,11 @@ mobile nav
   .start-welcome {
     margin-top: 75%;
   }
+  .start-welcome .title {
+    font-size: 45px;
+  }
   .start-welcome .subtitle {
+    font-size: 32px;
     text-align: left;
   }
   .start-welcome div:nth-child(2) {
@@ -1028,23 +1032,15 @@ mobile nav
     object-fit: cover;
     object-position: 45% 50px !important;
   }
-  .title {
-    font-size: 45px;
-  }
-  .subtitle,
-  .box-title {
-    font-size: 32px;
-    text-align: center;
-  }
   .separator-quotes {
     background-size: contain;
     height: 101px;
     background-repeat: no-repeat;
     top: 100px;
   }
-  .entry-content .wp-block-columns:nth-child(4) {
-    margin-top: -30px;
-  }
+  /* .entry-content .wp-block-columns:nth-child(4){
+     margin-top: -30px;
+  } */
   .start-text-image .arrow-unser-versprechen {
     top: 43%;
   }
@@ -1056,6 +1052,10 @@ mobile nav
   }
   .start-text-image .box-text {
     line-height: 1.7;
+  }
+  .start-text-image .box-title {
+    font-size: 32px;
+    text-align: center;
   }
   .start-text-image .wp-block-columns:last-child {
     padding-bottom: 25px;
@@ -1202,19 +1202,13 @@ mobile nav
   .start-fuhrung {
     flex-direction: column-reverse;
     text-align: center;
+    margin-bottom: 600px;
   }
   .start-fuhrung .subtitle {
     text-align: center;
   }
   .start-fuhrung div figure:nth-child(1) img {
     left: 10%;
-  }
-  #footer-area {
-    margin-top: 600px !important;
-  }
-  .wp-block-column:not(:only-child) {
-    flex-basis: 0;
-    flex-grow: 1;
   }
   .start-shops .images {
     gap: 10px;
@@ -1335,6 +1329,9 @@ mobile nav
   .separator-bottom-zertifizerit {
     top: -60px;
   }
+  .start-fuhrung {
+    margin-bottom: 500px;
+  }
   .start-fuhrung div figure:nth-child(1) img {
     left: 5%;
     width: 60%;
@@ -1349,9 +1346,6 @@ mobile nav
     width: 90%;
     margin: auto;
     margin-bottom: 20px;
-  }
-  #footer-area {
-    margin-top: 500px !important;
   }
 }
 @media (max-width: 375px) {
@@ -1385,20 +1379,14 @@ mobile nav
     width: 66%;
     top: 175px;
   }
-  .title {
-    font-size: 40px;
-  }
-  .subtitle {
-    font-size: 28px;
-  }
-  .s-btn-red {
-    text-align: center;
-  }
   .start-shops .arrow_besteauswahl {
     top: 35%;
   }
-  #footer-area {
-    margin-top: 400px !important;
+  .start-shops .s-btn-red {
+    text-align: center;
+  }
+  .start-fuhrung {
+    margin-bottom: 400px;
   }
 }
 .single-image-wrapper img {
@@ -4272,6 +4260,10 @@ responsive
 .brauereifuehrung-image .wp-block-column p.box-text {
   margin-bottom: 30px;
 }
+.brauereifuehrung-image .wp-block-image,
+.brauereifuehrung-image .wp-block-image img {
+  width: 100%;
+}
 .bottom-links {
   text-align: center;
   padding: 20px 5%;
@@ -4283,10 +4275,6 @@ responsive
   font-size: 16px;
   font-weight: bold;
 }
-.wp-block-image,
-.wp-block-image img {
-  width: 100%;
-}
 @media (max-width: 1400px) {
   .header-text.brauereifuehrung {
     top: 6%;
@@ -4297,5 +4285,77 @@ responsive
   .arrow-brauereifuehrung {
     top: 13%;
     right: 46%;
+  }
+}
+.header-text.downloads {
+  top: 6%;
+}
+.downloads-text .wp-block-column {
+  position: relative;
+}
+.downloads-text .title,
+.downloads-text .subtitle {
+  text-align: center;
+}
+.downloads-text .ptext {
+  text-align: center;
+  padding: 0 15%;
+}
+.arrow-downloads {
+  background: url("/wp-content/uploads/images/arrows/header_arrow.png");
+  width: 97px;
+  height: 115px;
+  position: absolute;
+  top: 13%;
+  right: 46%;
+}
+.separator-wrapper .separator-header-downloads {
+  top: -150px;
+}
+.downloads-image h3 {
+  text-align: center;
+}
+.downloads-image .wp-block-columns {
+  margin: 0px;
+  padding: 0px;
+}
+.downloads-image .wp-block-columns:first-child {
+  box-shadow: 0px -15px 27px -25px grey;
+}
+.downloads-image .wp-block-columns:last-child {
+  box-shadow: 0 15px 27px -25px grey;
+}
+.downloads-image .wp-block-column {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+.downloads-image .wp-block-column .wp-block-image {
+  margin: 0px;
+  padding: 0px;
+}
+.downloads-image .wp-block-column p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+.downloads-image .wp-block-column p.box-text {
+  margin-bottom: 30px;
+}
+.downloads-image .wp-block-image,
+.downloads-image .wp-block-image img {
+  width: 100%;
+}
+@media (max-width: 1400px) {
+  .header-text.downloads {
+    top: 6%;
+  }
+  .separator-header-downloads {
+    background-size: contain;
   }
 }
