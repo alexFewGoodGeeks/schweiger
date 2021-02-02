@@ -4408,3 +4408,86 @@ responsive
     top: 305px;
   }
 }
+.header-text.heimdienst {
+  top: 6%;
+}
+.heimdienst-text .wp-block-column {
+  position: relative;
+}
+.heimdienst-text .title,
+.heimdienst-text .subtitle {
+  text-align: center;
+}
+.heimdienst-text .ptext {
+  text-align: center;
+  padding: 0 15%;
+}
+.arrow-heimdienst {
+  background: url("/wp-content/uploads/images/arrows/header_arrow.png");
+  width: 97px;
+  height: 115px;
+  position: absolute;
+  top: 13%;
+  right: 46%;
+}
+.separator-wrapper .separator-header-heimdienst {
+  top: -150px;
+}
+.heimdienst-wrapper {
+  margin-top: -50px;
+}
+.heimdienst-wrapper h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.heimdienst-wrapper .wp-block-columns:nth-child(3),
+.heimdienst-wrapper .wp-block-columns:nth-child(5) {
+  margin-top: 50px;
+}
+.heimdienst-wrapper .wp-block-columns {
+  margin-bottom: 20px;
+}
+.heimdienst-wrapper .wp-block-column {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+.heimdienst-wrapper .wp-block-column .wp-block-image {
+  margin: 0px;
+  padding: 0px;
+}
+.heimdienst-wrapper .wp-block-column p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+.heimdienst-wrapper .wp-block-column p.box-text {
+  margin-bottom: 30px;
+}
+.heimdienst-wrapper .wp-block-column ul {
+  list-style: none;
+}
+.heimdienst-wrapper .wp-block-column ul i {
+  padding-right: 10px;
+  color: #78bca1;
+}
+.heimdienst-wrapper .wp-block-column ul p {
+  text-align: center;
+}
+.heimdienst-wrapper .wp-block-image,
+.heimdienst-wrapper .wp-block-image img {
+  width: 100%;
+}
+@media (max-width: 1400px) {
+  .header-text.heimdienst {
+    top: 6%;
+  }
+  .separator-header-heimdienst {
+    background-size: contain;
+  }
+}

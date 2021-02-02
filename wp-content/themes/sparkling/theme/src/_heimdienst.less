@@ -1,0 +1,92 @@
+@import "_variables";
+
+.header-text.heimdienst {
+  top: 6%;
+}
+.heimdienst-text {
+  .wp-block-column {
+    position: relative;
+  }
+  .title, .subtitle {
+    text-align: center;
+  }
+  .ptext {
+    text-align: center;
+    padding: 0 15%;
+  }
+}
+.arrow-heimdienst{
+  background: url("/wp-content/uploads/images/arrows/header_arrow.png");
+  width: 97px;
+  height: 115px;
+  position: absolute;
+  top: 13%;
+  right: 46%;
+}
+.separator-wrapper {
+  .separator-header-heimdienst {
+    top: -150px;
+  }
+}
+.heimdienst-wrapper {
+  margin-top: -50px;
+  h2{
+    text-align: center;
+    margin-bottom:50px;
+  }
+  .wp-block-columns:nth-child(3), .wp-block-columns:nth-child(5) {
+    margin-top:50px;
+  }
+  .wp-block-columns{
+    margin-bottom:20px;
+  }
+  .wp-block-column {
+    position: relative;
+    margin:0px;
+    padding:0px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    .wp-block-image {
+      margin: 0px;
+      padding: 0px;
+    }
+    p {
+      text-align: center;
+      margin-left:auto;
+      margin-right:auto;
+      width: 85%;
+      &.box-text {
+        margin-bottom:30px;
+      }
+    }
+    ul{
+      list-style: none;
+      i{
+        padding-right: 10px;
+        color:#78bca1;
+      }
+      p{
+        text-align: center;
+      }
+    }
+  }
+
+
+  .wp-block-image, .wp-block-image img{
+    width:100%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .header-text.heimdienst {
+    top: 6%
+  }
+  .separator-header-heimdienst {
+    background-size: contain;
+  }
+}
+
+@media (max-width: 1200px) {
+}
