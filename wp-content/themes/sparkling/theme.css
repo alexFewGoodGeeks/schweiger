@@ -4677,3 +4677,44 @@ responsive
     background-size: contain;
   }
 }
+.header-text.stellenangebote .header-text {
+  bottom: -240px;
+  top: unset;
+}
+.header-arrow-stellenangebote {
+  right: 47%;
+  top: unset;
+  bottom: -490px;
+}
+.stellenangebote-header-separator {
+  bottom: 0;
+}
+.stellenangebote-wrapper div {
+  max-width: 992px;
+  margin: 0 auto;
+}
+.stellenangebote-wrapper div p,
+.stellenangebote-wrapper div li {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000;
+}
+@media (max-width: 1400px) {
+  .header-text.stellenangebote .header-text {
+    bottom: -170px;
+    top: unset;
+  }
+  .header-arrow-stellenangebote {
+    right: 47%;
+    top: unset;
+    bottom: -380px;
+  }
+  .stellenangebote-header-separator {
+    bottom: 0;
+    background-size: cover;
+    height: 111px;
+  }
+}
