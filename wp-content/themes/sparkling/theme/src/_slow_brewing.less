@@ -196,6 +196,9 @@
     .wp-block-column:first-child {
       .title, .subtitle, .ptext {
         width: 420px;
+        @media (max-width: 992px) {
+          width: 100%;
+        }
       }
     }
   }
@@ -209,5 +212,160 @@
         line-height: 44px;
       }
     }
+  }
+  .slow-brewing-zertifizierte-wrapper .arrow_zertifizierte {
+    top: 42%;
+  }
+  .slow-brewing-video .arrow_slow_brewing_das_gutesiegel {
+    right: 6%;
+    bottom: 12%;
+  }
+}
+
+@media (max-width: 992px) {
+  .single-featured {
+    min-height: 600px;
+    object-fit: cover;
+  }
+
+  .header-text.slow-brewing {
+    .header-title {
+      .header-title-responsive()
+    }
+    .header-subtitle {
+      .header-subtitle-responsive();
+    }
+  }
+
+  .separator-slow-brewing-header {
+    height: 120px;
+  }
+  .header-text.slow-brewing {
+    top: 6%;
+  }
+
+  .arrow-slow-brewing {
+    top: 425px;
+    right: 42%;
+  }
+
+  .guetesiegel-header {
+    top: 9%;
+    img {
+      max-width: 120px;
+      max-height: 120px;
+    }
+  }
+
+  .langsamkeit {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slow-brewing-zertifizierte-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    div:nth-child(2) {
+      min-height: 500px;
+    }
+  }
+  .slow-brewing-zertifizierte-wrapper .wp-block-column:nth-child(2) .wp-block-image img {
+    max-width: 220px;
+  }
+  .slow-brewing-zertifizierte-wrapper .wp-block-column:nth-child(2) .wp-block-image {
+    bottom: unset;
+    right: unset;
+    top: 5%;
+  }
+  .separator-zertifizierte {
+    background-size: cover;
+    height: 84px;
+    top: 15px;
+  }
+
+  .slow-brewing-zertifizierte-wrapper {
+    background-size: 190% 80%;
+    margin-bottom: 10%;
+    background-position: 80% 0%;
+  }
+
+  .slow-brewing-text-image-title {
+    .slow-brewing-title {
+      font-size: 32px;
+    }
+  }
+  .slow-brewing-image-title {
+    .counter {
+      background: url(/wp-content/uploads/images/number_circle.png);
+      background-size: contain;
+      top: 10px;
+      .number {
+        color: @color-red-primary;
+      }
+    }
+    h3 {
+      font-size: 32px;
+    }
+    .wp-block-column {
+
+      .wp-block-columns:nth-child(odd) {
+        display: flex;
+        flex-direction: column-reverse;
+        .wp-block-columns {
+          display: flex;
+          flex-direction: column-reverse;
+          @media (max-width: 467px) {
+            .box-title {
+              width: 175px;
+              text-align: center;
+            }
+          }
+        }
+      }
+      .wp-block-columns:nth-child(even) {
+        display: flex;
+        flex-direction: column;
+        .wp-block-columns {
+          display: flex;
+          flex-direction: column;
+          @media (max-width: 467px) {
+            .box-title {
+              width: 236px;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  .slow-brewing-text-image-title .slow-brewing-title-red {
+    font-size: 32px;
+  }
+  .slow-brewing-text-image-title .slow-brewing-title-red .title-number {
+    height: 50px;
+    width: 50px;
+    margin: 0 8px -8px 8px;
+    display: flex;
+    line-height: 20px;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+  }
+
+  .slow-brewing-video {
+    .title {
+      .title-responsive();
+    }
+    .subtitle {
+      .subtitle-responsive();
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .slow-brewing-text-image-title .slow-brewing-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: self-end;
   }
 }

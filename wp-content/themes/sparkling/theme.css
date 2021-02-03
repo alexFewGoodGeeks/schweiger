@@ -3374,6 +3374,150 @@ responsive
     font-size: 32px;
     line-height: 44px;
   }
+  .slow-brewing-zertifizierte-wrapper .arrow_zertifizierte {
+    top: 42%;
+  }
+  .slow-brewing-video .arrow_slow_brewing_das_gutesiegel {
+    right: 6%;
+    bottom: 12%;
+  }
+}
+@media (max-width: 1200px) and (max-width: 992px) {
+  .langsamkeit .wp-block-column:first-child .title,
+  .langsamkeit .wp-block-column:first-child .subtitle,
+  .langsamkeit .wp-block-column:first-child .ptext {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .single-featured {
+    min-height: 600px;
+    object-fit: cover;
+  }
+  .header-text.slow-brewing .header-title {
+    font-size: 45px;
+    line-height: 59px;
+  }
+  .header-text.slow-brewing .header-subtitle {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .separator-slow-brewing-header {
+    height: 120px;
+  }
+  .header-text.slow-brewing {
+    top: 6%;
+  }
+  .arrow-slow-brewing {
+    top: 425px;
+    right: 42%;
+  }
+  .guetesiegel-header {
+    top: 9%;
+  }
+  .guetesiegel-header img {
+    max-width: 120px;
+    max-height: 120px;
+  }
+  .langsamkeit {
+    display: flex;
+    flex-direction: column;
+  }
+  .slow-brewing-zertifizierte-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .slow-brewing-zertifizierte-wrapper div:nth-child(2) {
+    min-height: 500px;
+  }
+  .slow-brewing-zertifizierte-wrapper .wp-block-column:nth-child(2) .wp-block-image img {
+    max-width: 220px;
+  }
+  .slow-brewing-zertifizierte-wrapper .wp-block-column:nth-child(2) .wp-block-image {
+    bottom: unset;
+    right: unset;
+    top: 5%;
+  }
+  .separator-zertifizierte {
+    background-size: cover;
+    height: 84px;
+    top: 15px;
+  }
+  .slow-brewing-zertifizierte-wrapper {
+    background-size: 190% 80%;
+    margin-bottom: 10%;
+    background-position: 80% 0%;
+  }
+  .slow-brewing-text-image-title .slow-brewing-title {
+    font-size: 32px;
+  }
+  .slow-brewing-image-title .counter {
+    background: url(/wp-content/uploads/images/number_circle.png);
+    background-size: contain;
+    top: 10px;
+  }
+  .slow-brewing-image-title .counter .number {
+    color: #DC052C;
+  }
+  .slow-brewing-image-title h3 {
+    font-size: 32px;
+  }
+  .slow-brewing-image-title .wp-block-column .wp-block-columns:nth-child(odd) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .slow-brewing-image-title .wp-block-column .wp-block-columns:nth-child(odd) .wp-block-columns {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .slow-brewing-image-title .wp-block-column .wp-block-columns:nth-child(even) {
+    display: flex;
+    flex-direction: column;
+  }
+  .slow-brewing-image-title .wp-block-column .wp-block-columns:nth-child(even) .wp-block-columns {
+    display: flex;
+    flex-direction: column;
+  }
+  .slow-brewing-text-image-title .slow-brewing-title-red {
+    font-size: 32px;
+  }
+  .slow-brewing-text-image-title .slow-brewing-title-red .title-number {
+    height: 50px;
+    width: 50px;
+    margin: 0 8px -8px 8px;
+    display: flex;
+    line-height: 20px;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+  }
+  .slow-brewing-video .title {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .slow-brewing-video .subtitle {
+    font-size: 32px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 992px) and (max-width: 467px) {
+  .slow-brewing-image-title .wp-block-column .wp-block-columns:nth-child(odd) .wp-block-columns .box-title {
+    width: 175px;
+    text-align: center;
+  }
+}
+@media (max-width: 992px) and (max-width: 467px) {
+  .slow-brewing-image-title .wp-block-column .wp-block-columns:nth-child(even) .wp-block-columns .box-title {
+    width: 236px;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .slow-brewing-text-image-title .slow-brewing-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: self-end;
+  }
 }
 .header-text.heandler-finden {
   top: 8%;
