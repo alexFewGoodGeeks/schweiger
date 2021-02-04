@@ -242,6 +242,9 @@ a.s-btn-red:hover {
 .navbar-collapse {
   padding: 0;
 }
+.dropdown-menu {
+  min-width: 240px;
+}
 .page-template-white-header-template .navbar,
 .page-template-historie-template .navbar,
 .page-template-team-template .navbar {
