@@ -242,6 +242,9 @@ a.s-btn-red:hover {
 .navbar-collapse {
   padding: 0;
 }
+.dropdown-menu {
+  min-width: 240px;
+}
 .page-template-white-header-template .navbar,
 .page-template-historie-template .navbar,
 .page-template-team-template .navbar {
@@ -4697,7 +4700,7 @@ responsive
 .stellenangebote-wrapper div li {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 18px;
   line-height: 28px;
   color: #000;
