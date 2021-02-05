@@ -4883,3 +4883,7 @@ responsive
     height: 111px;
   }
 }
+.regionale-verbundenheit .title,
+.regionale-verbundenheit .ptext {
+  text-align: center;
+}
