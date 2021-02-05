@@ -4059,7 +4059,7 @@ responsive
   width: 93px;
   height: 176px;
   right: 14%;
-  bottom: 18%;
+  bottom: 24%;
 }
 .store-locator #wpsl-stores li .wpsl-store-location p strong:first-child {
   font-family: 'Montserrat', sans-serif;
@@ -4089,6 +4089,9 @@ responsive
 .store-locator #wpsl-stores li .wpsl-direction-wrap a {
   color: #E5E5E5;
 }
+.images figure img {
+  max-width: 250px;
+}
 @media (max-width: 1400px) {
   .separator-handler-finden-header {
     background-size: contain;
@@ -4111,6 +4114,9 @@ responsive
   .arrow_beste_auswahl {
     top: 33%;
     left: 5%;
+  }
+  .arrow_lieblingsbiere {
+    bottom: 22%;
   }
 }
 @media (max-width: 992px) {

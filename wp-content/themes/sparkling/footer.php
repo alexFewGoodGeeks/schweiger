@@ -119,6 +119,10 @@
             jQuery("#content").removeClass('responsive-active');
         });
     });
+    
+    jQuery(function() {
+        jQuery(".tlp-portfolio-isotope-button button:first-child").html("Alle");
+    })
 </script>
 </body>
 </html>
