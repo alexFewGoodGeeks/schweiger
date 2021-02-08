@@ -51,6 +51,9 @@
     top: 36%;
   }
 }
+.arrow_zertifizierte_mobile {
+  display: none;
+}
 .langsamkeit {
   .wp-block-column:first-child {
     display: flex;
@@ -241,7 +244,7 @@
     height: 120px;
   }
   .header-text.slow-brewing {
-    top: 6%;
+    top: 4%;
   }
 
   .arrow-slow-brewing {
@@ -250,7 +253,7 @@
   }
 
   .guetesiegel-header {
-    top: 9%;
+    top: 6%;
     img {
       max-width: 120px;
       max-height: 120px;
@@ -288,7 +291,20 @@
     margin-bottom: 10%;
     background-position: 80% 0%;
   }
+  .arrow_zertifizierte {
+    display: none;
+  }
 
+  .arrow_zertifizierte_mobile {
+    display: block;
+    background: url(/wp-content/uploads/images/arrows/arrow_kontaktieren.png);
+    position: absolute;
+    width: 194px;
+    height: 151px;
+    top: 32%;
+    left: 1%;
+    transform: rotate(-123deg);
+  }
   .slow-brewing-text-image-title {
     .slow-brewing-title {
       font-size: 32px;
@@ -359,13 +375,123 @@
     .subtitle {
       .subtitle-responsive();
     }
+    .arrow_slow_brewing_das_gutesiegel {
+      bottom: 6%;
+    }
+    .ptext {
+      padding: 0 10%;
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+  .langsamkeit {
+    padding: 20px;
   }
 }
 
 @media (max-width: 500px) {
+
+  .arrow-slow-brewing {
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    right: 39%;
+    top: 455px;
+  }
+
+  .guetesiegel-header {
+    top: 7%;
+  }
   .slow-brewing-text-image-title .slow-brewing-title {
     display: flex;
     flex-wrap: wrap;
     align-items: self-end;
+  }
+  .separator-slow-brewing-header {
+    height: 100px;
+  }
+  .slow-brewing-zertifizierte-wrapper {
+    background-size: 441% 89%;
+    margin-bottom: 10%;
+    background-position: 72% -30%;
+  }
+  .slow-brewing-zertifizierte-wrapper .wp-block-column:nth-child(2) .wp-block-image img {
+    max-width: 180px;
+  }
+
+  .slow-brewing-zertifizierte-wrapper div:nth-child(2) {
+    max-height: 350px;
+  }
+
+  .slow-brewing-zertifizierte-wrapper .wp-block-column:nth-child(2) .wp-block-image {
+    top: 7%;
+    left: 20px;
+  }
+
+  .separator-zertifizierte {
+    background-size: cover;
+    height: 46px;
+    top: 32px;
+    bottom: 380px;
+  }
+  .arrow_zertifizierte_mobile {
+    top: 34%;
+    left: -5%;
+    transform: rotate(
+            -112deg
+    );
+  }
+
+  .slow-brewing-video .arrow_slow_brewing_das_gutesiegel {
+      width: 50px;
+    height: 90px;
+    background-size: contain;
+  }
+  .slow-brewing-video .video {
+    width: 95%;
+  }
+}
+@media (max-width: 425px) {
+  .arrow_zertifizierte_mobile {
+    top: 32%;
+  }
+}
+
+@media (max-width: 375px) {
+  .slow-brewing-zertifizierte-wrapper {
+    background-size: 503% 93%;
+    margin-bottom: 10%;
+    background-position: 72% -7%;
+  }
+  .separator-zertifizierte {
+    height: 42px;
+  }
+  .slow-brewing-zertifizierte-wrapper .wp-block-column:nth-child(1) {
+    padding: 5%;
+  }
+  .slow-brewing-video .arrow_slow_brewing_das_gutesiegel {
+    right: 2%;
+    bottom: 360px;
+  }
+  .arrow_zertifizierte_mobile {
+    top: 33%;
+  }
+}
+
+@media (max-width: 320px) {
+  .header-text.slow-brewing {
+    top: 230px;
+  }
+  .arrow-slow-brewing {
+    right: 35%;
+  }
+  .guetesiegel-header img {
+    max-width: 100px;
+  }
+  .arrow_zertifizierte_mobile {
+    top: 34%;
+    left: -10%;
   }
 }
