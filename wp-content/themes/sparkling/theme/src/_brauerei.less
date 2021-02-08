@@ -75,10 +75,7 @@
   }
 }
 
-.awards-table {
-  width: 992px;
-  margin: 0 auto;
-}
+
 
 .table-awards {
 
@@ -161,4 +158,89 @@
     background-size: contain;
     top: -100px;
   }
+}
+
+@media (min-width: 992px) {
+  .awards-table {
+    width: 992px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 992px) {
+  .header-text.braueri {
+    .header-title {
+      .header-title-responsive();
+    }
+  }
+
+  .header-arrow-brauerei {
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    right: 39%;
+  }
+  .die-brauerei-wrapper {
+    padding: 0 5%;
+    .wp-block-column {
+      margin-left: 0px;
+    }
+    .title + .wp-block-columns {
+      margin-top: 5% !important;
+    }
+    .title {
+      .title-responsive();
+    }
+  }
+
+  .philosophie-content {
+    .box-title {
+      font-size: 32px !important;
+    }
+  }
+
+  .pholosophie-wrapper {
+    margin-top: 20px;
+    .philosophie-header {
+      padding: 0 5%;
+    }
+  }
+
+  .awards-wrapper .awards-title {
+    margin-top: 20px;
+  }
+  .awards-title {
+    .title {
+      margin: 0 5%;
+    }
+  }
+  .awards-content {
+    .wp-block-column:first-child {
+      margin: 0 5%;
+    }
+  }
+
+  .table-awards {
+    margin: unset;
+    width: 100%;
+    tr, td {
+      display: block;
+      text-align: center;
+      width: 100% !important;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 680px) {
+  .brauerei-header-separator {
+    top: -70px;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 425px) {
+
 }

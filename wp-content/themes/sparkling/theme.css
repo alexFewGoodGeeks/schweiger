@@ -4373,10 +4373,6 @@ responsive
 .awards-wrapper .awards-content div figure {
   margin-bottom: 0;
 }
-.awards-table {
-  width: 992px;
-  margin: 0 auto;
-}
 .table-awards {
   width: 992px;
   margin: 0 auto;
@@ -4453,6 +4449,71 @@ responsive
     top: -100px;
   }
 }
+@media (min-width: 992px) {
+  .awards-table {
+    width: 992px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 992px) {
+  .header-text.braueri .header-title {
+    font-size: 45px;
+    line-height: 59px;
+  }
+  .header-arrow-brauerei {
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    right: 39%;
+  }
+  .die-brauerei-wrapper {
+    padding: 0 5%;
+  }
+  .die-brauerei-wrapper .wp-block-column {
+    margin-left: 0px;
+  }
+  .die-brauerei-wrapper .title + .wp-block-columns {
+    margin-top: 5% !important;
+  }
+  .die-brauerei-wrapper .title {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .philosophie-content .box-title {
+    font-size: 32px !important;
+  }
+  .pholosophie-wrapper {
+    margin-top: 20px;
+  }
+  .pholosophie-wrapper .philosophie-header {
+    padding: 0 5%;
+  }
+  .awards-wrapper .awards-title {
+    margin-top: 20px;
+  }
+  .awards-title .title {
+    margin: 0 5%;
+  }
+  .awards-content .wp-block-column:first-child {
+    margin: 0 5%;
+  }
+  .table-awards {
+    margin: unset;
+    width: 100%;
+  }
+  .table-awards tr,
+  .table-awards td {
+    display: block;
+    text-align: center;
+    width: 100% !important;
+  }
+}
+@media (max-width: 680px) {
+  .brauerei-header-separator {
+    top: -70px;
+    background-size: cover;
+  }
+}
 .header-text.brauhaus .header-text {
   top: 170px;
 }
@@ -4513,6 +4574,50 @@ responsive
   }
   .separator-header-brauhaus {
     top: -120px;
+  }
+}
+@media (max-width: 992px) {
+  .header-text.brauhaus .header-text {
+    top: 80px;
+  }
+  .header-text.brauhaus .header-text .header-title {
+    font-size: 45px;
+    line-height: 59px;
+  }
+  .header-arrow-brauhaus {
+    top: 280px;
+    right: 42%;
+  }
+  .separator-header-brauhaus {
+    background-size: contain;
+    top: -80px;
+  }
+  .brauhaus-wrapper .title {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .brauhaus-wrapper .title-box {
+    font-size: 32px !important;
+  }
+  .brauhaus-wrapper .wp-block-column .wp-block-columns:nth-child(2) {
+    flex-direction: column;
+  }
+  .brauhaus-wrapper .wp-block-column .wp-block-columns:nth-child(3) {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 992px) and (max-width: 500px) {
+  .brauhaus-wrapper .wp-block-column .wp-block-columns:nth-child(3) {
+    margin-top: 50px;
+  }
+  .brauhaus-wrapper .wp-block-column .wp-block-columns:nth-child(3) .wp-block-column {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .separator-header-brauhaus {
+    background-size: contain;
+    top: -55px;
   }
 }
 .header-text.brauereifuehrung {

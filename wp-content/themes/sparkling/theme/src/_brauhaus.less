@@ -63,3 +63,52 @@
     top: -120px;
   }
 }
+
+@media (max-width: 992px) {
+  .header-text.brauhaus {
+    .header-text {
+      top: 80px;
+      .header-title {
+        .header-title-responsive();
+      }
+    }
+  }
+  .header-arrow-brauhaus {
+    top: 280px;
+    right: 42%;
+  }
+  .separator-header-brauhaus {
+    background-size: contain;
+    top: -80px;
+  }
+  .brauhaus-wrapper {
+    .title {
+      .title-responsive();
+    }
+    .title-box {
+      font-size: 32px !important;;
+    }
+    .wp-block-column {
+      .wp-block-columns:nth-child(2) {
+        flex-direction: column;
+      }
+      .wp-block-columns:nth-child(3) {
+        @media (max-width: 500px) {
+          margin-top: 50px;
+          .wp-block-column {
+            margin-top: 50px;
+          }
+        }
+
+        flex-direction: column-reverse;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .separator-header-brauhaus {
+    background-size: contain;
+    top: -55px;
+  }
+}
