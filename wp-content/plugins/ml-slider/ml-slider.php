@@ -35,7 +35,7 @@ class MetaSliderPlugin
      *
      * @var string
      */
-    public $version = '3.20.0';
+    public $version = '3.20.1';
 
     /**
      * Pro installed version number
