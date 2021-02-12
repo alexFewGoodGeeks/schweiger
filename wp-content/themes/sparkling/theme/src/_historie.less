@@ -464,7 +464,9 @@ responsive
 
 @media (max-width: 768px) {
   .separator-historie-header  {
-    top: -125px
+    top: -125px;
+    background-size: contain;
+    height: 83px;
   }
 
   .row-1935 {
@@ -685,12 +687,23 @@ responsive
 
 @media (max-width: 375px) {
   .arrow-die-historie {
-    top: 7%;
+    top: 8%;
+  }
+  .separator-historie-header {
+    background-size: contain;
+    height: 43px;
   }
   .row-2018 {
     margin-right: 15px;
   }
   .row-1919 {
     margin-right: 60px;
+  }
+}
+
+@media (max-width: 320px) {
+  .arrow-die-historie {
+    top: 7%;
+    right: 33%;
   }
 }

@@ -695,6 +695,8 @@ function get_body_class( $class = '' ) {
 
 			$classes[] = 'page-id-' . $page_id;
 
+			$classes[] = $post->post_name;
+
 			if ( get_pages(
 				array(
 					'parent' => $page_id,

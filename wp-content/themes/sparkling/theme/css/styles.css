@@ -385,7 +385,17 @@ mobile nav
 }
 #responsive-navigation .responsive-navigation-wrapper div.collapse {
   display: block !important;
-  width: 80%;
+  width: 85%;
+}
+#responsive-navigation #menu-left-menu #menu-item-455 ul #menu-item-456 {
+  display: flex !important;
+}
+#responsive-navigation #menu-left-menu #menu-item-455 ul #menu-item-456 span {
+  margin-top: 12px;
+}
+#responsive-navigation #menu-left-menu #menu-item-455 ul #menu-item-456 ul {
+  margin-top: 30px;
+  margin-left: -220px;
 }
 .header-arrow {
   background: url("/wp-content/uploads/images/arrows/header_arrow.png");
@@ -1528,6 +1538,11 @@ mobile nav
     display: block;
   }
 }
+@media (max-width: 375px) {
+  .footer-buttons-wrapper .footer-buttons a {
+    font-size: 14px;
+  }
+}
 .site-header .logo-wrapper {
   min-width: 120px;
 }
@@ -2459,6 +2474,8 @@ responsive
 @media (max-width: 768px) {
   .separator-historie-header {
     top: -125px;
+    background-size: contain;
+    height: 83px;
   }
   .row-1935 {
     margin-right: 165px;
@@ -2647,13 +2664,23 @@ responsive
 }
 @media (max-width: 375px) {
   .arrow-die-historie {
-    top: 7%;
+    top: 8%;
+  }
+  .separator-historie-header {
+    background-size: contain;
+    height: 43px;
   }
   .row-2018 {
     margin-right: 15px;
   }
   .row-1919 {
     margin-right: 60px;
+  }
+}
+@media (max-width: 320px) {
+  .arrow-die-historie {
+    top: 7%;
+    right: 33%;
   }
 }
 .header-text.team {
@@ -3116,6 +3143,10 @@ responsive
   .arrow-biere {
     top: 7%;
     right: 43%;
+    background-size: contain;
+    height: 80px;
+    width: 80px;
+    right: 42%;
   }
   .biere-text .title {
     font-size: 45px;
@@ -3167,6 +3198,9 @@ responsive
     left: 82%;
     bottom: 122%;
   }
+  .arrow-biere {
+    top: 9%;
+  }
 }
 @media (max-width: 600px) {
   .separator-wrapper .separator-header-biere {
@@ -3188,6 +3222,15 @@ responsive
   }
   .arrow-biere {
     top: 10%;
+  }
+}
+@media (max-width: 425px) {
+  .header-text.biere {
+    top: 4%;
+  }
+  .arrow-biere {
+    top: 11%;
+    right: 36%;
   }
 }
 .header-text.slow-brewing {
@@ -4508,10 +4551,38 @@ responsive
     width: 100% !important;
   }
 }
+@media (max-width: 768px) {
+  .header-text.braueri .header-text {
+    top: -70px;
+  }
+  .header-arrow-brauerei {
+    top: 125px;
+    right: 44%;
+  }
+}
 @media (max-width: 680px) {
   .brauerei-header-separator {
     top: -70px;
     background-size: cover;
+  }
+}
+@media (max-width: 425px) {
+  .header-arrow-brauerei {
+    top: 125px;
+    right: 40%;
+  }
+}
+@media (max-width: 320px) {
+  .header-text.braueri .header-text {
+    top: -120px;
+  }
+  .header-arrow-brauerei {
+    top: 95px;
+    right: 37%;
+  }
+  .brauerei-header-separator {
+    top: -55px;
+    background-size: contain;
   }
 }
 .header-text.brauhaus .header-text {
@@ -4614,10 +4685,23 @@ responsive
     margin-top: 50px;
   }
 }
+@media (max-width: 768px) {
+  .header-arrow-brauhaus {
+    background-size: contain;
+    height: 80px;
+    width: 80px;
+    right: 42%;
+  }
+}
 @media (max-width: 500px) {
   .separator-header-brauhaus {
     background-size: contain;
     top: -55px;
+  }
+}
+@media (max-width: 425px) {
+  .header-arrow-brauhaus {
+    right: 37%;
   }
 }
 .header-text.brauereifuehrung {
@@ -4939,6 +5023,34 @@ responsive
     top: 305px;
   }
 }
+@media (max-width: 992px) {
+  .header-text.brauwerkstatt .header-text .header-title {
+    font-size: 45px;
+    line-height: 59px;
+  }
+  .header-arrow-brauwerkstatt {
+    background-size: contain;
+    height: 80px;
+    width: 80px;
+    right: 42%;
+  }
+  .brauwerkstatt-header-separator {
+    background-size: contain;
+    top: -80px;
+  }
+}
+@media (max-width: 500px) {
+  .brauwerkstatt-header-separator {
+    background-size: contain;
+    top: -65px;
+  }
+}
+@media (max-width: 320px) {
+  .brauwerkstatt-header-separator {
+    height: 50px;
+    top: -55px;
+  }
+}
 .header-text.heimdienst {
   top: 8%;
 }
@@ -5108,7 +5220,68 @@ responsive
     height: 111px;
   }
 }
+@media (max-width: 992px) {
+  .header-text.stellenangebote .header-text .header-title {
+    font-size: 45px;
+    line-height: 59px;
+  }
+  .header-arrow-stellenangebote {
+    background-size: contain;
+    height: 80px;
+    width: 80px;
+    right: 42%;
+  }
+  .stellenangebote-header-separator {
+    background-size: contain;
+  }
+  .stellenangebote-wrapper .box-title {
+    font-size: 32px !important;
+  }
+  .stellenangebote-wrapper p,
+  .stellenangebote-wrapper li {
+    font-size: 16px !important;
+  }
+}
+@media (max-width: 768px) {
+  .stellenangebote-wrapper {
+    padding: 0 5%;
+  }
+  .stellenangebote-header-separator {
+    bottom: -20px;
+  }
+}
+@media (max-width: 600px) {
+  .stellenangebote-header-separator {
+    bottom: -30px;
+    height: 90px;
+  }
+}
+@media (max-width: 375px) {
+  .stellenangebote-header-separator {
+    height: 80px;
+  }
+}
 .regionale-verbundenheit .title,
 .regionale-verbundenheit .ptext {
   text-align: center;
+}
+@media (max-width: 992px) {
+  .uber-uns .header-text {
+    top: 14%;
+  }
+}
+@media (max-width: 768px) {
+  .uber-uns .header-text {
+    top: 12%;
+  }
+}
+@media (max-width: 425px) {
+  .uber-uns .brauerei-header-separator {
+    background-size: contain;
+  }
+}
+@media (max-width: 375px) {
+  .uber-uns .brauerei-header-separator {
+    top: -55px;
+  }
 }

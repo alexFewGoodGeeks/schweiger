@@ -44,3 +44,50 @@
   }
 
 }
+
+@media (max-width: 992px) {
+  .header-text.stellenangebote {
+    .header-text {
+      .header-title {
+        .header-title-responsive();
+      }
+    }
+  }
+  .header-arrow-stellenangebote {
+    .arrow-header-responsive();
+  }
+  .stellenangebote-header-separator {
+    background-size: contain;
+  }
+
+  .stellenangebote-wrapper {
+    .box-title {
+      font-size: 32px !important;
+    }
+    p, li {
+      font-size: 16px !important;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .stellenangebote-wrapper {
+    padding:0 5%;
+  }
+  .stellenangebote-header-separator {
+    bottom: -20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .stellenangebote-header-separator {
+    bottom: -30px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 375px) {
+  .stellenangebote-header-separator {
+    height: 80px;
+  }
+}
