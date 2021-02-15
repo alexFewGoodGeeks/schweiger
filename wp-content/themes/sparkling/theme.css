@@ -305,6 +305,18 @@ a.s-btn-red:hover {
 /**
 mobile nav
  */
+#responsive-nav-button {
+  border-color: transparent !important;
+}
+#responsive-nav-button .icon-bar {
+  background-color: white;
+}
+#responsive-nav-button .icon-bar:nth-child(3) {
+  width: 50%;
+}
+#responsive-nav-button .icon-bar:last-child {
+  display: none;
+}
 @media (max-width: 992px) {
   .page-template-transparent-header-template .navbar.navbar-default {
     background: transparent !important;
@@ -1860,8 +1872,11 @@ mobile nav
     font-size: 32px;
   }
   .arrow-malzerei-header {
+    background-size: contain;
+    height: 80px;
+    width: 80px;
     right: 42%;
-    top: 160px;
+    top: 245px;
   }
   .separator-malzerei-header {
     top: -130px;
@@ -1887,6 +1902,14 @@ mobile nav
     display: flex;
     flex-direction: column;
   }
+  .munchner-malz .header-text.stellenangebote .header-text,
+  .pilsner-malz .header-text.stellenangebote .header-text {
+    bottom: -200px;
+  }
+  .munchner-malz .header-arrow-stellenangebote,
+  .pilsner-malz .header-arrow-stellenangebote {
+    bottom: -440px;
+  }
 }
 @media (max-width: 768px) {
   .single-featured {
@@ -1911,7 +1934,7 @@ mobile nav
   }
   .arrow-malzerei-header {
     right: 42%;
-    top: 150px;
+    top: 250px;
   }
   .malzherstellung-wrapper {
     background-size: cover;
@@ -2011,6 +2034,15 @@ mobile nav
     background-size: contain;
   }
 }
+@media (width: 425px) {
+  .arrow-malzerei-header {
+    top: 280px;
+  }
+  .munchner-malz .header-arrow-stellenangebote,
+  .pilsner-malz .header-arrow-stellenangebote {
+    right: 36%;
+  }
+}
 @media (max-width: 375px) {
   .separator-malzerei-header {
     top: -90px;
@@ -2018,6 +2050,18 @@ mobile nav
   .separator-untrennbar-bottom {
     height: 42px;
     top: 36px;
+  }
+  .munchner-malz .header-arrow-stellenangebote,
+  .pilsner-malz .header-arrow-stellenangebote {
+    right: 37%;
+  }
+}
+@media (max-width: 320px) {
+  .separator-malzerei-header {
+    top: -80px;
+  }
+  .separator-untrennbar-bottom {
+    height: 36px;
   }
 }
 .header-text.historie {
@@ -4932,13 +4976,17 @@ responsive
     top: 4%;
   }
   .header-text.downloads .header-title {
-    font-size: 50px;
+    font-size: 45px;
+    line-height: 59px;
   }
   .separator-wrapper .separator-header-downloads {
     top: -110px;
   }
   .arrow-downloads {
-    top: 6%;
+    background-size: contain;
+    height: 80px;
+    width: 80px;
+    top: 8%;
     right: 42%;
   }
   .downloads-image .wp-block-columns:nth-child(1),
@@ -4971,6 +5019,11 @@ responsive
   .arrow-downloads {
     top: 7%;
     right: 38%;
+  }
+}
+@media (max-width: 425px) {
+  .arrow-downloads {
+    top: 10%;
   }
 }
 .brauwerkstatt-header-separator {
@@ -5143,11 +5196,15 @@ responsive
 @media (max-width: 992px) {
   .heimdienst .header-title {
     font-size: 45px;
+    line-height: 59px;
   }
   .separator-wrapper .separator-header-heimdienst {
     top: -110px;
   }
   .arrow-heimdienst {
+    background-size: contain;
+    height: 80px;
+    width: 80px;
     top: 10%;
     right: 42%;
   }
@@ -5160,6 +5217,15 @@ responsive
   }
   .heimdienst-wrapper .wp-block-column .wp-block-image {
     margin-bottom: 8%;
+  }
+  .arrow_beste_auswahl {
+    top: 34%;
+  }
+  .arrow_lieblingsbiere {
+    bottom: 18%;
+  }
+  .heandler-finder-shop-text .images figure img {
+    max-width: 100%;
   }
 }
 @media (max-width: 576px) {
@@ -5177,6 +5243,11 @@ responsive
   }
   .arrow-heimdienst {
     right: 40%;
+  }
+}
+@media (max-width: 425px) {
+  .arrow-heimdienst {
+    top: 13%;
   }
 }
 .header-text.stellenangebote .header-text {

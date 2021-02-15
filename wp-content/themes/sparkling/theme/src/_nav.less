@@ -99,6 +99,18 @@
 /**
 mobile nav
  */
+#responsive-nav-button {
+  border-color: transparent !important;
+  .icon-bar {
+    background-color: white;
+    &:nth-child(3) {
+      width: 50%;
+    }
+    &:last-child {
+      display: none;
+    }
+  }
+}
 @media(max-width: 992px) {
   .page-template-transparent-header-template .navbar.navbar-default {
     background: transparent !important;

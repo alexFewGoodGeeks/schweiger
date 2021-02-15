@@ -265,8 +265,9 @@
     font-size: 32px;
   }
   .arrow-malzerei-header {
+    .arrow-header-responsive();
     right: 42%;
-    top: 160px;
+    top: 245px;
   }
 
   .separator-malzerei-header {
@@ -298,6 +299,15 @@
       }
     }
   }
+
+  .munchner-malz, .pilsner-malz {
+    .header-text.stellenangebote .header-text {
+      bottom: -200px;
+    }
+    .header-arrow-stellenangebote {
+      bottom: -440px;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -325,7 +335,7 @@
   }
   .arrow-malzerei-header {
     right: 42%;
-    top: 150px;
+    top: 250px;
   }
 
   .malzherstellung-wrapper {
@@ -454,6 +464,16 @@
   }
 }
 
+@media(width: 425px) {
+  .arrow-malzerei-header {
+    top: 280px;
+  }
+  .munchner-malz, .pilsner-malz {
+    .header-arrow-stellenangebote {
+      right: 36%;
+    }
+  }
+}
 @media (max-width: 375px) {
   .separator-malzerei-header {
     top: -90px;
@@ -461,5 +481,19 @@
   .separator-untrennbar-bottom {
     height: 42px;
     top: 36px;
+  }
+
+  .munchner-malz, .pilsner-malz {
+    .header-arrow-stellenangebote {
+      right: 37%;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .separator-malzerei-header {
+    top: -80px;
+  }
+  .separator-untrennbar-bottom {
+    height: 36px;
   }
 }
