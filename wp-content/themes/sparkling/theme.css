@@ -415,6 +415,19 @@ mobile nav
   width: 97px;
   height: 115px;
 }
+.impressum h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #000;
+}
+@media (max-width: 992px) {
+  .impressum h3 {
+    font-size: 32px;
+  }
+}
 .homepage-slider {
   position: absolute;
   top: -170px;
@@ -5363,4 +5376,20 @@ responsive
   .uber-uns .brauerei-header-separator {
     top: -55px;
   }
+}
+.datenschutz .header-text {
+  top: 1%;
+}
+.contact-info .contact-details {
+  background-color: #E5E5E5;
+  margin: 0;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact-info .contact-details h3 {
+  font-size: 28px;
+  text-align: center;
 }
