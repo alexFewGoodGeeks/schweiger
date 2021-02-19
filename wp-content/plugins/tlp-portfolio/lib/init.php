@@ -162,7 +162,6 @@ if ( ! class_exists( 'TLPPortfolio' ) ):
 		 * @return string|void
 		 */
 		function render( $viewName, $args = array(), $return = false ) {
-
 			$path = str_replace( ".", "/", $viewName );
 			if ( $args ) {
 				extract( $args );

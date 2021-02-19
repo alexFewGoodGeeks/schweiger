@@ -37,12 +37,20 @@ if (!class_exists('PortfolioPostMeta')):
             global $TLPportfolio;
             wp_nonce_field($TLPportfolio->nonceText(), 'tlp_nonce');
             $meta = get_post_meta($post->ID);
-            $short_description = !isset($meta['short_description'][0]) ? '' : $meta['short_description'][0];
-            $project_url = !isset($meta['project_url'][0]) ? '' : $meta['project_url'][0];
-            $project_url = !isset($meta['external_url'][0]) ? '' : $meta['external_url'][0];
-            $tools = !isset($meta['tools'][0]) ? '' : $meta['tools'][0];
+//            $short_description = !isset($meta['short_description'][0]) ? '' : $meta['short_description'][0];
+//            $project_url = !isset($meta['project_url'][0]) ? '' : $meta['project_url'][0];
+//            $project_url = !isset($meta['external_url'][0]) ? '' : $meta['external_url'][0];
+//            $tools = !isset($meta['tools'][0]) ? '' : $meta['tools'][0];
+            $alc = !isset($meta['alc'][0]) ? '' : $meta['alc'][0];
+            $originalWort = !isset($meta['original_wort'][0]) ? '' : $meta['original_wort'][0];
+            $color = !isset($meta['color'][0]) ? '' : $meta['color'][0];
+            $aroma = !isset($meta['aroma'][0]) ? '' : $meta['aroma'][0];
+            $flavour = !isset($meta['flavour'][0]) ? '' : $meta['flavour'][0];
+
+
             ?>
             <div class="portfolio-field-holder">
+                <?php /* ?>
                 <div class="rt-field-wrapper">
                     <div class="rt-label">
                         <label for="short_description"><?php esc_html_e('Short Description', "tlp-portfolio"); ?></label>
@@ -81,6 +89,56 @@ if (!class_exists('PortfolioPostMeta')):
                                value="<?php echo $external_url; ?>">
                     </div>
                 </div>
+                <?php */ ?>
+                <div class="rt-field-wrapper">
+                    <div class="rt-label">
+                        <label for="project_url"><?php esc_html_e('ALC', "tlp-portfolio"); ?></label>
+                    </div>
+                    <div class="rt-field">
+                        <input type="text" name="alc" class="rt-from-control"
+                               value="<?php echo $alc; ?>">
+                    </div>
+                </div>
+
+                <div class="rt-field-wrapper">
+                    <div class="rt-label">
+                        <label for="project_url"><?php esc_html_e('Original Wort', "tlp-portfolio"); ?></label>
+                    </div>
+                    <div class="rt-field">
+                        <input type="text" name="original_wort" class="rt-from-control"
+                               value="<?php echo $originalWort; ?>">
+                    </div>
+                </div>
+
+                <div class="rt-field-wrapper">
+                    <div class="rt-label">
+                        <label for="project_url"><?php esc_html_e('Color', "tlp-portfolio"); ?></label>
+                    </div>
+                    <div class="rt-field">
+                        <input type="text" name="color" class="rt-from-control"
+                               value="<?php echo $color; ?>">
+                    </div>
+                </div>
+
+                <div class="rt-field-wrapper">
+                    <div class="rt-label">
+                        <label for="project_url"><?php esc_html_e('Aroma', "tlp-portfolio"); ?></label>
+                    </div>
+                    <div class="rt-field">
+                        <input type="text" name="aroma" class="rt-from-control"
+                               value="<?php echo $aroma; ?>">
+                    </div>
+                </div>
+
+                <div class="rt-field-wrapper">
+                    <div class="rt-label">
+                        <label for="project_url"><?php esc_html_e('Flavour', "tlp-portfolio"); ?></label>
+                    </div>
+                    <div class="rt-field">
+                        <input type="text" name="flavour" class="rt-from-control"
+                               value="<?php echo $flavour; ?>">
+                    </div>
+                </div>
             </div>
             <?php
         }
@@ -102,10 +160,17 @@ if (!class_exists('PortfolioPostMeta')):
                 return;
             }
 
-            $meta['short_description'] = (isset($_POST['short_description']) ? wp_kses_post($_POST['short_description']) : '');
-            $meta['project_url'] = (isset($_POST['project_url']) ? esc_attr($_POST['project_url']) : '');
-            $meta['external_url'] = (isset($_POST['project_url']) ? esc_attr($_POST['external_url']) : '');
-            $meta['tools'] = (isset($_POST['tools']) ? esc_attr($_POST['tools']) : '');
+//            $meta['short_description'] = (isset($_POST['short_description']) ? wp_kses_post($_POST['short_description']) : '');
+//            $meta['project_url'] = (isset($_POST['project_url']) ? esc_attr($_POST['project_url']) : '');
+//            $meta['external_url'] = (isset($_POST['project_url']) ? esc_attr($_POST['external_url']) : '');
+//            $meta['tools'] = (isset($_POST['tools']) ? esc_attr($_POST['tools']) : '');
+
+            $meta['alc'] = (isset($_POST['alc']) ? esc_attr($_POST['alc']) : '');
+            $meta['original_wort'] = (isset($_POST['original_wort']) ? esc_attr($_POST['original_wort']) : '');
+            $meta['color'] = (isset($_POST['color']) ? esc_attr($_POST['color']) : '');
+            $meta['aroma'] = (isset($_POST['aroma']) ? esc_attr($_POST['aroma']) : '');
+            $meta['flavour'] = (isset($_POST['flavour']) ? esc_attr($_POST['flavour']) : '');
+
 
             foreach ($meta as $key => $value) {
                 update_post_meta($post->ID, $key, $value);

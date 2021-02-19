@@ -297,6 +297,33 @@ if (!class_exists('TLPPortfolioHelper')) :
                 return;
             }
 
+            $alc = get_post_meta($id, 'alc', true);
+            $originalWort = get_post_meta($id, 'original_wort', true);
+            $color = get_post_meta($id, 'color', true);
+            $aroma = get_post_meta($id, 'aroma', true);
+            $flavour = get_post_meta($id, 'flavour', true);
+
+            $html = "";
+            $html .= "<ul>";
+            if ($alc) {
+                $html .= "<li><span>".__('ALK')."</span><span>".$alc."</span><span>".__("vol")." %</span></li>";
+            }
+            if ($originalWort) {
+                $html .= "<li><span>".__('Stammwürze')."</span><span>".$originalWort."</span><span>%</span></li>";
+            }
+            if ($color) {
+                $html .= "<li><span>".__('Farbe')."</span><span>".$color."</span></li>";
+            }
+            if ($aroma) {
+                $html .= "<li><span>".__('Geruch')."</span><span>".$aroma."</span></li>";
+            }
+            if ($flavour) {
+                $html .= "<li><span>".__('Geschmack')."</span><span>".$flavour."</span></li>";
+            }
+            $html .="</ul>";
+
+            return $html;
+
             $project_url = get_post_meta($id, 'project_url', true);
             $tools = get_post_meta(get_the_ID(), 'tools', true);
             $categories = strip_tags(get_the_term_list($id, $TLPportfolio->taxonomies['category'],

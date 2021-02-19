@@ -247,7 +247,8 @@ a.s-btn-red:hover {
 }
 .page-template-white-header-template .navbar,
 .page-template-historie-template .navbar,
-.page-template-team-template .navbar {
+.page-template-team-template .navbar,
+.portfolio-template-default .navbar {
   background: #fff;
   z-index: 100;
   position: fixed;
@@ -257,18 +258,21 @@ a.s-btn-red:hover {
 @media (max-width: 1200px) {
   .page-template-white-header-template .navbar li,
   .page-template-historie-template .navbar li,
-  .page-template-team-template .navbar li {
+  .page-template-team-template .navbar li,
+  .portfolio-template-default .navbar li {
     padding: 8px;
   }
 }
 .page-template-white-header-template .dropdown-menu > li:hover,
 .page-template-historie-template .dropdown-menu > li:hover,
-.page-template-team-template .dropdown-menu > li:hover {
+.page-template-team-template .dropdown-menu > li:hover,
+.portfolio-template-default .dropdown-menu > li:hover {
   background: #fff;
 }
 .page-template-white-header-template .dropdown-menu > li > a,
 .page-template-historie-template .dropdown-menu > li > a,
-.page-template-team-template .dropdown-menu > li > a {
+.page-template-team-template .dropdown-menu > li > a,
+.portfolio-template-default .dropdown-menu > li > a {
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   font-weight: 500;
@@ -277,12 +281,14 @@ a.s-btn-red:hover {
 }
 .page-template-white-header-template .dropdown-menu > li > a:hover,
 .page-template-historie-template .dropdown-menu > li > a:hover,
-.page-template-team-template .dropdown-menu > li > a:hover {
+.page-template-team-template .dropdown-menu > li > a:hover,
+.portfolio-template-default .dropdown-menu > li > a:hover {
   background: #fff;
 }
 .page-template-white-header-template .navbar-default .navbar-nav > li > a,
 .page-template-historie-template .navbar-default .navbar-nav > li > a,
-.page-template-team-template .navbar-default .navbar-nav > li > a {
+.page-template-team-template .navbar-default .navbar-nav > li > a,
+.portfolio-template-default .navbar-default .navbar-nav > li > a {
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   font-weight: 500;
