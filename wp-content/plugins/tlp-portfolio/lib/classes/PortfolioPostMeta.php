@@ -46,6 +46,7 @@ if (!class_exists('PortfolioPostMeta')):
             $color = !isset($meta['color'][0]) ? '' : $meta['color'][0];
             $aroma = !isset($meta['aroma'][0]) ? '' : $meta['aroma'][0];
             $flavour = !isset($meta['flavour'][0]) ? '' : $meta['flavour'][0];
+            $favoriteProduct = !isset($meta['favorite_product'][0]) ? '' : $meta['favorite_product'][0];
 
 
             ?>
@@ -139,6 +140,19 @@ if (!class_exists('PortfolioPostMeta')):
                                value="<?php echo $flavour; ?>">
                     </div>
                 </div>
+
+                <div class="rt-field-wrapper">
+                    <div class="rt-label">
+                        <label for="project_url"><?php esc_html_e('Is Favorite Product', "tlp-portfolio"); ?></label>
+                    </div>
+                    <div class="rt-field">
+                        <select class="rt-form-control" name="favorite_product">
+                            <option value="0" <?php echo (!$favoriteProduct) ? "selected":""?>><?php echo __("No") ?></option>
+                            <option value="1" <?php echo ($favoriteProduct) ? "selected":""?> ><?php echo __("Yes") ?></option>
+                        </select>
+                    </div>
+                </div>
+
             </div>
             <?php
         }
@@ -170,7 +184,7 @@ if (!class_exists('PortfolioPostMeta')):
             $meta['color'] = (isset($_POST['color']) ? esc_attr($_POST['color']) : '');
             $meta['aroma'] = (isset($_POST['aroma']) ? esc_attr($_POST['aroma']) : '');
             $meta['flavour'] = (isset($_POST['flavour']) ? esc_attr($_POST['flavour']) : '');
-
+            $meta['favorite_product'] = (isset($_POST['favorite_product']) ? esc_attr($_POST['favorite_product']) : '');
 
             foreach ($meta as $key => $value) {
                 update_post_meta($post->ID, $key, $value);
