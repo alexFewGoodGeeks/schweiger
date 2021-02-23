@@ -3972,7 +3972,7 @@ responsive
 .tlp-portfolio .isotope1 .tlp-content .tlp-content-holder {
   padding: 15px 0;
 }
-.tlp-portfolio .isotope1 .tlp-content h3 {
+.tlp-portfolio .isotope1 .tlp-content h3 a {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 600;

@@ -1,5 +1,6 @@
 <?php
 $imgHtml = null;
+$link = $pLink;
 if ( $img ) {
 	$imgHtml = sprintf( '<div class="tlp-portfolio-thum tlp-item">
                 <img class="img-responsive" src="%s" title="%s">
@@ -28,7 +29,7 @@ $grid = $grid . $isoFilter;
                                    </div>',
 			$link ?
 				sprintf( '<h3><a href="%s"%s>%s</a></h3>', $item_link, $link_target ? " target='{$link_target}'" : null, $title ) :
-				sprintf( '<h3>%s</h3>', $title ),
+				sprintf( '<h3><a href="%s">%s</a></h3>', $pLink, $title ),
 			$short_d
 		); ?>
     </div>

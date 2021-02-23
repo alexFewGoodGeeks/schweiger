@@ -56,6 +56,7 @@ $allPosts = get_posts($allPotstsArgs);
 </div>
 </div>
 
+<?php /* ?>
 <div class="row">
     <link type="text/css" rel="stylesheet" href="/wp-content/plugins/tlp-portfolio/assets/css/lightslider.css" />
     <script src="/wp-content/plugins/tlp-portfolio/assets/js/lightslider.js"></script>
@@ -81,3 +82,4 @@ $allPosts = get_posts($allPotstsArgs);
     });
 </script>
 
+<?php */ ?>

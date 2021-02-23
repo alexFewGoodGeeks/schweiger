@@ -304,21 +304,21 @@ if (!class_exists('TLPPortfolioHelper')) :
             $flavour = get_post_meta($id, 'flavour', true);
 
             $html = "";
-            $html .= "<ul>";
+            $html .= "<ul class='single-product-details'>";
             if ($alc) {
-                $html .= "<li><span>".__('ALK')."</span><span>".$alc."</span><span>".__("vol")." %</span></li>";
+                $html .= "<li><span class='product-details'>".__('ALK')."</span> <span>".$alc."</span> <span>".__("vol")." %</span> </li>";
             }
             if ($originalWort) {
-                $html .= "<li><span>".__('Stammwürze')."</span><span>".$originalWort."</span><span>%</span></li>";
+                $html .= "<li><span class='product-details'>".__('Stammwürze')."</span> <span>".$originalWort."</span><span>%</span></li>";
             }
             if ($color) {
-                $html .= "<li><span>".__('Farbe')."</span><span>".$color."</span></li>";
+                $html .= "<li><span class='product-details'>".__('Farbe')."</span> <span>".$color."</span></li>";
             }
             if ($aroma) {
-                $html .= "<li><span>".__('Geruch')."</span><span>".$aroma."</span></li>";
+                $html .= "<li><span class='product-details'>".__('Geruch')."</span> <span>".$aroma."</span></li>";
             }
             if ($flavour) {
-                $html .= "<li><span>".__('Geschmack')."</span><span>".$flavour."</span></li>";
+                $html .= "<li><span class='product-details'>".__('Geschmack')."</span> <span>".$flavour."</span></li>";
             }
             $html .="</ul>";
 
